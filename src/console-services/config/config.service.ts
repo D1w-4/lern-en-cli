@@ -1,8 +1,15 @@
 import * as fs from 'fs';
 import * as inquirer from 'inquirer';
 import { Command, Console } from 'nestjs-console';
+import { execSync } from 'child_process';
 
 const promt = inquirer.createPromptModule();
+
+const Registry  = {
+    'http://nexus.bank24.int/repository/npm-group/': 'tochka',
+    'http://nexus.bank24.int/repository/tochka-modules/': 'tochka_publish',
+    'https://registry.npmjs.com/': 'global_npm'
+};
 
 export interface IConfig {
     gitlab?: {
@@ -14,6 +21,9 @@ export interface IConfig {
     stash?: {
         token: string;
     },
+    registry?: {
+        url: string;
+    }
 }
 
 @Console({
@@ -23,7 +33,7 @@ export interface IConfig {
 export class ConfigService {
     static configPath: string = `${__dirname}/config.json`;
 
-    private get config(): IConfig {
+    get config(): IConfig {
         if (!fs.existsSync(ConfigService.configPath)) {
             return {};
         }
@@ -42,7 +52,7 @@ export class ConfigService {
         }
     }
 
-    private setConfig(fn: (config: IConfig) => IConfig) {
+    setConfig(fn: (config: IConfig) => IConfig) {
         const result = fn(this.config);
         fs.writeFileSync(ConfigService.configPath, JSON.stringify(result));
     }
@@ -136,6 +146,50 @@ export class ConfigService {
                 }
             }
         })
+    }
+
+    @Command({
+        command: 'registry',
+        description: '',
+        options: [
+            {
+                flags: '-s, --show',
+                description: ' Текущая и возможнные конфигурации'
+            },
+            {
+                flags: '-r, --registry <registryName>',
+                description: 'Переключить глобальную конфигурацию registry'
+            }
+        ]
+    })
+    async registry({ show, registry }) {
+        const currentRegistry = execSync('npm config get registry', {encoding: 'utf-8'}).trim();
+        if (show) {
+            const cloneRegistry = { ...Registry };
+            console.table(cloneRegistry);
+            console.log('Текущий:', Registry[currentRegistry] || 'Уникальный', currentRegistry);
+            return;
+        }
+
+        if (!registry) {
+            const { nextRegistry } = await promt({
+                type: 'list',
+                name: 'nextRegistry',
+                message: `Выберите registry`,
+                default: currentRegistry,
+                choices: Object.entries(Registry).map(([url, name]) => (
+                    {
+                        name: `${name} (${url})`,
+                        value: url
+                    }
+                ))
+            });
+            registry = nextRegistry;
+        }
+
+        if (registry !== currentRegistry) {
+            execSync(`npm config set registry ${registry}`);
+        }
     }
 }
 

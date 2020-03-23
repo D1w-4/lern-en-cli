@@ -1,7 +1,7 @@
 {
   "name": "ebash",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Утилита для frontend разработки",
   "license": "MIT",
   "repository": "ssh://git@gitlab.tochka-tech.com:2224/frontend-core/ebash.git",
