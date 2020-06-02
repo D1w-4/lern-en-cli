@@ -9,6 +9,7 @@ import { makeMicroservice } from 'src/console-services/t15/make-microservice';
 import { t15ChoiseService } from 'src/utils';
 import { manifest } from './manifest';
 
+const promt = inquirer.createPromptModule();
 const ui = new inquirer.ui.BottomBar();
 
 @Console({
@@ -41,7 +42,7 @@ export class T15Service {
             }
         ]
     })
-    async info({service, branch}): Promise<void> {
+    async info({ service, branch }): Promise<void> {
         if (!service) {
             service = await t15ChoiseService();
         }
@@ -70,14 +71,23 @@ export class T15Service {
     })
     async makeMicroservice() {
         await makeMicroservice.run();
-        const manifestPath = `${process.cwd()}/${makeMicroservice.fileService}/public/manifest.json`;
+        const manifestPath = `${process.cwd()}/${makeMicroservice.fileService}/config/service.config.json`;
         await manifest.main(manifestPath);
 
         const prevPath = process.cwd();
 
         process.chdir(`${process.cwd()}/${makeMicroservice.fileService}`);
         await actualize.run();
-        await makeDocumentation(manifestPath);
+
+        const { isMakeDocumentation } = await promt({
+            type: 'confirm',
+            name: 'isMakeDocumentation',
+            message: 'Микросервис создан, создать markdown документацию сервиса?'
+        });
+
+        if (isMakeDocumentation) {
+            await makeDocumentation(manifestPath);
+        }
 
         process.chdir(prevPath);
     }

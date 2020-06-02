@@ -1,1 +1,1 @@
-export { <%- eb.toUpper(name)%>, I<%- eb.toUpper(name)%>Props } from './<%- eb.toSnek(name)%>';
+export { <%- eb.toUpper(name)%> } from './<%- eb.toSnek(name)%>';

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export interface I<%- eb.toUpper(name)%>Props {
+interface I<%- eb.toUpper(name)%>Props {
 
 }
 

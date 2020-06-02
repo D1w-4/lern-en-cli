@@ -168,7 +168,7 @@ export class T15AnalizeService {
             result.push({
                 date,
                 average: `${Math.floor(dr.asHours())}:${dr.minutes()}`,
-                average_hm: `${dr.days()}d ${dr.hours()}:${dr.minutes()}`,
+                average_hm: `${dr.days()}d ${dr.hours()}:${dr.minutes()}:00`,
                 count: resultTime.length
             })
         });

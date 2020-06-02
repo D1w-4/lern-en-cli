@@ -26,18 +26,32 @@ export interface IConfig {
     }
 }
 
+function findConfigPath() {
+    const arPath = __dirname.split('/');
+    let resultPath = `~/Documents/ebash`;
+    for (const path of arPath) {
+        if (fs.existsSync([...arPath, 'ebash.config.json'].join('/'))) {
+            resultPath = arPath.join('/');
+            break;
+        }
+        arPath.pop()
+    }
+    return resultPath;
+}
+
 @Console({
     name: 'config',
     description: 'Настройка конфигурационых параметов CLi'
 })
 export class ConfigService {
-    static configPath: string = `${__dirname}/config.json`;
+    static configPath: string = findConfigPath();
+    static configFile: string = `${ConfigService.configPath}/ebash.config.json`;
 
     get config(): IConfig {
-        if (!fs.existsSync(ConfigService.configPath)) {
+        if (!fs.existsSync(ConfigService.configFile)) {
             return {};
         }
-        return JSON.parse(fs.readFileSync(ConfigService.configPath, { encoding: 'utf-8' }));
+        return JSON.parse(fs.readFileSync(ConfigService.configFile, { encoding: 'utf-8' }));
     }
 
     constructor() {
@@ -45,7 +59,7 @@ export class ConfigService {
     }
 
     private makeConfigIfNotExist() {
-        if (!fs.existsSync(ConfigService.configPath)) {
+        if (!fs.existsSync(ConfigService.configFile)) {
             this.setConfig(() => {
                 return {}
             })
@@ -54,7 +68,8 @@ export class ConfigService {
 
     setConfig(fn: (config: IConfig) => IConfig) {
         const result = fn(this.config);
-        fs.writeFileSync(ConfigService.configPath, JSON.stringify(result));
+        fs.mkdirSync(ConfigService.configPath, { recursive: true });
+        fs.writeFileSync(ConfigService.configFile, JSON.stringify(result));
     }
 
     @Command({
@@ -194,9 +209,9 @@ export class ConfigService {
 }
 
 let resultConfig: IConfig;
-if (!fs.existsSync(ConfigService.configPath)) {
+if (!fs.existsSync(ConfigService.configFile)) {
     resultConfig = {};
 } else {
-    resultConfig = JSON.parse(fs.readFileSync(ConfigService.configPath, { encoding: 'utf-8' }));
+    resultConfig = JSON.parse(fs.readFileSync(ConfigService.configFile, { encoding: 'utf-8' }));
 }
 export const config: IConfig = resultConfig;
