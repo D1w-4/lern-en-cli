@@ -2,6 +2,8 @@ import * as fs from 'fs';
 import * as inquirer from 'inquirer';
 import { Command, Console } from 'nestjs-console';
 import { execSync } from 'child_process';
+import * as path from 'path';
+import * as os from 'os';
 
 const promt = inquirer.createPromptModule();
 
@@ -28,7 +30,7 @@ export interface IConfig {
 
 function findConfigPath() {
     const arPath = __dirname.split('/');
-    let resultPath = `~/Documents/ebash`;
+    let resultPath = `${os.homedir()}/Documents/ebash`;
     for (const path of arPath) {
         if (fs.existsSync([...arPath, 'ebash.config.json'].join('/'))) {
             resultPath = arPath.join('/');
