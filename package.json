@@ -39,12 +39,13 @@
     "json2csv": "^5.0.0",
     "json2md": "^1.7.0",
     "lodash.template": "^4.5.0",
+    "module-loader-tool": "0.1.4",
     "moment": "^2.24.0",
     "nestjs-console": "^2.1.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.0",
     "rxjs": "^6.5.4",
-    "module-loader-tool": "0.1.4"
+    "tslint": "^6.1.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^6.13.2",
