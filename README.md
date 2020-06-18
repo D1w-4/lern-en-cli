@@ -26,7 +26,7 @@
 
 [Изменение директории npm](https://github.com/mixonic/docs.npmjs.com/blob/master/content/getting-started/fixing-npm-permissions.md)
 
-###Описание функционала  
+### Описание функционала  
 ```ebash -h```
 <br>
 cписок команд доступных на уровне пространства, работает на любом уровне
