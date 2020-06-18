@@ -142,11 +142,13 @@ ebash t15-analyze issues --output ./myFile.json
 
 ```ebash t15-analyze use-style```
 <br>
-Анализирует использование css в микросервисах
+Анализирует использование css в микросервисах.
+<br>
 Для просмотра параметров `ebash t15-analyze use-style -h`
 
 
 ```ebash t15-analyze use-ui-kit```
 <br>
-Анализирует использование ui-kit разных версий в микросервисах
+Анализирует использование ui-kit разных версий в микросервисах.
+<br>
 Для просмотра параметров `ebash t15-analyze use-ui-kit -h`
