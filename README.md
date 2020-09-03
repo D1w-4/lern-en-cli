@@ -18,7 +18,7 @@
 ### Установка
 Для правильной работы необходимо устанавливать ebash в глобальный node_modules npm, и не забыть указать registry Точки
 
-```npm global install ebash --registry http://nexus.bank24.int/repository/npm-group/``` 
+```npm --global install ebash --registry http://nexus.bank24.int/repository/npm-group/``` 
 
 Если нет прав на запись в дирректорию global npm то можно изменить ее местонахождение либо дать нужные права
 
