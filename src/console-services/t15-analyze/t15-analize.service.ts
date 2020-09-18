@@ -9,7 +9,7 @@ import { IssueModel } from 'src/api/gitlab/models';
 import { checkStyleUse } from 'src/console-services/t15-analyze/check-style-use';
 import { checkUiKitUse } from 'src/console-services/t15-analyze/check-ui-kit-use';
 import { commitByDate } from 'src/console-services/t15-analyze/commitByDate';
-import { statusBar, t15ChoiseServices } from 'src/utils';
+import { statusBar, t15ChoiseServices, getFileList } from 'src/utils';
 
 const promt = inquirer.createPromptModule();
 
@@ -295,6 +295,52 @@ export class T15AnalizeService {
             fs.writeFileSync(path.resolve(process.cwd(), csv), parse(result));
         }
         console.log(JSON.stringify(result, null, 4));
+    }
+
+    @Command({
+        command: 'calc-ui-kit-imports',
+        description: 'Подсчет количества импортов каждого компонента в директории',
+        options: [
+            {
+                flags: '-p, --path <pathName>',
+                description: 'Директория сканирования',
+                defaultValue: process.cwd()
+            },
+            {
+                flags: '-o, --output <outputName>',
+                description: 'Файл для сохранения JSON - результатов',
+                defaultValue: './calc-ui-kit-imports.json'
+            }
+        ]
+    })
+    async calcImportInService({path, output}): Promise<void> {
+        const fileList = await getFileList(path, ['ts', 'tsx']);
+        const prList= fileList.map((p) => {
+            return new Promise<string>((resolve,reject) => {
+                fs.readFile(p, {encoding: 'utf8'}, (err, content) => {
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(content);
+                    }
+                })
+            })
+        });
+
+        const contentList = await Promise.all(prList);
+        const result = contentList.reduce((acc,p) => {
+            const r = checkUiKitUse.calcNormalImport(p);
+            Object.entries(r).forEach(([key, value]) => {
+                if (!acc[key]) {
+                    acc[key] = value
+                } else {
+                    acc[key] += value;
+                }
+            });
+            return acc;
+        }, {});
+        console.log(JSON.stringify(result, null, 4));
+        fs.writeFileSync(output, JSON.stringify(result, null, 4));
     }
 
     @Command({
