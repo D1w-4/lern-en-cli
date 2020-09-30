@@ -25,6 +25,11 @@
 Права
 ```sudo chown -R $(whoami) /usr/local/lib``` 
 
+Если нет прав на запись в директорию /usr/local/bin то можно предоставить соответствующие права командой:
+
+```sudo chown -R $(whoami) /usr/local/bin``` 
+
+
 [Изменение директории npm](https://github.com/mixonic/docs.npmjs.com/blob/master/content/getting-started/fixing-npm-permissions.md)
 
 ### Описание функционала  
@@ -79,7 +84,7 @@ ebash t15 make fn customerAccount
 <br>
 <br>
 
-```ebash t15 actualyze```
+```ebash t15 actualize```
 
 Обновляет версию пакета `t15-dependency` в микросрвисе и устанавливает зависимости
 
