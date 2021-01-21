@@ -38,6 +38,11 @@ interface IIssues {
     count: number
 }
 
+interface IIssuesByAuthorCSV {
+    author: string;
+    count: number;
+}
+
 @Console({
     name: 't15-analyze',
     description: 'Аналитика сервисов полторашки'
@@ -92,6 +97,17 @@ export class T15AnalizeService {
         const data = result.map(({date, count}) => {
             return {
                 date,
+                count
+            }
+        });
+
+        return parse(data);
+    }
+
+    private issuesByAuthorCSV(result: Array<IIssuesByAuthorCSV>): string {
+        const data = result.map(({author, count}) => {
+            return {
+                author,
                 count
             }
         });
@@ -177,6 +193,53 @@ export class T15AnalizeService {
             csvType.forEach(type => {
                 fs.writeFileSync(path.resolve(process.cwd(), `${type}.csv`), this[type](result));
             });
+        }
+        if (output) {
+            fs.writeFileSync(path.resolve(process.cwd(), output), JSON.stringify(result, null, 4));
+        }
+
+        console.table(result);
+    }
+
+    @Command({
+        command: 'issues-by-author',
+        description: 'статистика по количеству заведенных ишью от автора',
+        options: [
+            {
+                flags: '-o, --output <outputPathpat>',
+                description: 'Файл для сохранения JSON результатов'
+            },
+            {
+                flags: '-c, --csv',
+                description: 'Вывод в файлы формата csv'
+            }
+        ]
+    })
+    async issuesByAuthor({ output, csv }) {
+        const issues = await gitlabTransport.issues(331, 'all');
+
+        const resultByAuthor: Record<string, Array<IssueModel>> = {};
+
+        issues.forEach((issue) => {
+            const key = issue.author.name;
+            resultByAuthor[key] = resultByAuthor[key] ?
+                [...resultByAuthor[key], issue] :
+                [issue];
+        });
+
+        const result = [];
+        Object.entries(resultByAuthor).forEach(([author, issueList]) => {
+            result.push({
+                author,
+                count: issueList.length
+            })
+        });
+        result.sort((a, b) => {
+            return a.count > b.count ? -1 : 1;
+        })
+
+        if (csv) {
+            fs.writeFileSync(path.resolve(process.cwd(), `issues-by-author.csv`), this.issuesByAuthorCSV(result));
         }
         if (output) {
             fs.writeFileSync(path.resolve(process.cwd(), output), JSON.stringify(result, null, 4));

@@ -145,6 +145,23 @@ ebash t15-analyze issues --csv
 ebash t15-analyze issues --output ./myFile.json
 ```
 
+```ebash t15-analyze issues-by-author```
+
+Анализирует количество заведенных issues по авторам [ui-kit](https://gitlab.tochka-tech.com/frontend-core/t15-ui-kit)
+
+Выводит данные в форматах `csv` или `json`
+
+При выводе в `csv` имена файлов создаются автоматически
+
+При выводе в `json` нужно указать имя файла
+
+```
+Пример
+
+ebash t15-analyze issues-by-author --csv
+ebash t15-analyze issues-by-author --output ./myFile.json
+```
+
 ```ebash t15-analyze use-style```
 
 Анализирует использование css в микросервисах.
