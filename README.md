@@ -145,6 +145,23 @@ ebash t15-analyze issues --csv
 ebash t15-analyze issues --output ./myFile.json
 ```
 
+```ebash t15-analyze issues-by-author```
+
+Анализирует количество заведенных issues по авторам [ui-kit](https://gitlab.tochka-tech.com/frontend-core/t15-ui-kit)
+ 
+Выводит данные в форматах `csv` или `json`
+
+При выводе в `csv` имена файлов создаются автоматически
+
+При выводе в `json` нужно указать имя файла
+
+```
+Пример
+
+ebash t15-analyze issues-by-author --csv
+ebash t15-analyze issues-by-author --output ./myFile.json
+```
+
 ```ebash t15-analyze use-style```
 
 Анализирует использование css в микросервисах.
@@ -161,3 +178,13 @@ ebash t15-analyze issues --output ./myFile.json
 ```ebash ui-kit upgrade-icons```
 
 Обновление иконок с `@tochka-modules/t15-ui-kit/icons` и `@t15-ui-kit/icons` на `@tochka-modules/t15-ui-kit-icons`
+
+```Запуск команд при локальной разработке```
+
+Вместо `ebash` надо написать `yarn console:dev`
+
+```
+Пример
+
+yarn console:dev t15-analyze issues-by-author --csv
+```

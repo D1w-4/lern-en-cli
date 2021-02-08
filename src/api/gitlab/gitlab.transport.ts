@@ -45,7 +45,7 @@ export class GitlabTransport {
         return result;
     }
 
-    issues(projectId: number, state: 'closed' | 'opened'): Promise<Array<IssueModel>> {
+    issues(projectId: number, state: 'closed' | 'opened' | 'all'): Promise<Array<IssueModel>> {
         const fn = (config) => {
             return this.axios
                        .get(`${gitlabEnv.apiUrl}/projects/${projectId}/issues`, config)
