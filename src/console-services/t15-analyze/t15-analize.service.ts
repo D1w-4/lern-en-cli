@@ -203,7 +203,7 @@ export class T15AnalizeService {
 
     @Command({
         command: 'issues-by-author',
-        description: 'статистика по количеству заведенных ишью от автора',
+        description: 'статистика по количеству заведенных ишью по авторам',
         options: [
             {
                 flags: '-o, --output <outputPathpat>',
