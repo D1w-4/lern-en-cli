@@ -75,11 +75,19 @@ ebash t15 make class <name>
 ```
 
 Создает функциональный или классовый компонент в папке, с index.ts, файлом компонента, подключеным `React` и создаными интерфейсами для `props` и `state`
+
+```javascript
+ebash t15 make analyticsClass <path>
+```
+Создает классовый компонент, с декоратором AnalyticsWorker и статическими методами для веб-аналитики.
+Для этого нужно указать путь до файла в формате CSV с картой событий. Можно скачать через кнопку download в новой витрине веб-аналитики. 
+
  
 ```
-Пример
+Примеры
 ebash t15 make fn customer
 ebash t15 make fn customerAccount
+ebash t15 make analyticsClass '/Users/kondrashindmitriy/Downloads/карта_событий (3).csv'
 ```
 <br>
 <br>
