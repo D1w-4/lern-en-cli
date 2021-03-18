@@ -1,1 +1,1 @@
-export { <%- eb.toUpper(className)%> } from './<%- eb.toSnek(category)%>.analytics';
+export { <%- className%> } from './<%- fileName%>';

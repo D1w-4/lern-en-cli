@@ -2,12 +2,13 @@ import * as path from 'path';
 import * as fs from 'fs';
 const dir = path.resolve(__dirname);
 
+const GOAL_VALUES = ['0', '1'];
+
 type TAnalyticsEventInfo = {
     action: string,
-    goal: boolean,
+    goal?: boolean,
     label?: string,
     methodName: string
-    name: string
 }
 
 function spacedWordsToCamelCase(str: string, isUpperCamelCase?: boolean): string {
@@ -31,17 +32,33 @@ function makeMethodName(actionName: string) {
 }
 
 function parseEventFromLine(eventStr): [string, TAnalyticsEventInfo] | undefined {
-    const [eventNumber, category, action, name, details, goal, description, screenshotLink] = eventStr.split(',');
+    const [eventNumber, category, action, name, details, ...restParts] = eventStr.split(',');
+    let goal: string;
+
+    // Если у события в поле "Детали" ничего нет, то тут пусто, а затем следует goal
+    if (details === '') {
+        goal = restParts[0];
+    } else {
+        // Иначе нужно искать goal, т.к. запятые могут быть в тексте поля "Детали", тогда разбиение станет неверным
+        for (const part of restParts) {
+            if (GOAL_VALUES.includes(part)) {
+                goal = part;
+                break;
+            }
+        }
+    }
 
     // Если строка начинается не с номера события, то это еще продолжение предыдущей
     if (!eventStr || Number.isNaN(Number(eventNumber))) return undefined;
 
     const res: TAnalyticsEventInfo = {
         action,
-        goal: Boolean(Number(goal)),
-        methodName: makeMethodName(action),
-        name
+        methodName: makeMethodName(action)
     };
+
+    if (Number(goal)) {
+        res.goal = true;
+    }
 
     if (details) {
         res.label = `____EVENT__${eventNumber}__LABEL____`;
@@ -74,4 +91,9 @@ export function getAnalyticsInfoFromEventsMap(pathToEventsMap: string): Record<s
 // 'tariff discount' -> TariffDiscountAnalytics
 export function makeClassName(categoryName: string) {
     return `${spacedWordsToCamelCase(categoryName, true)}Analytics`;
+}
+
+// 'tariff discount' -> tariff-discount.analytics
+export function makeFileName(categoryName: string) {
+    return `${categoryName.replace(' ', '-')}.analytics`;
 }
