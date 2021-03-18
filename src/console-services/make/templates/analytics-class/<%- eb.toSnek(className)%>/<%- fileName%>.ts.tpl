@@ -5,12 +5,13 @@ export class <%- className%> {<%
 events.forEach((event) => { %>
   static <%- event.methodName%>(): AnalyticsPackageDefault {
     return {
-      action: '<%= event.action%>',
-      goal: <%- event.goal%>,<%
-      if (event.label) { %>
-      label: '<%- event.label%>',<%
+      action: '<%= event.action%>'<%
+      if (event.goal) { %>,
+      goal: true<%
+      } %><%
+      if (event.label) { %>,
+      label: '<%- event.label%>'<%
       } %>
-      name: '<%- event.name%>'
     };
   }
 <% })

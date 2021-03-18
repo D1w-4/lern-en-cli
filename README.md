@@ -70,21 +70,17 @@ ebash config gitlab --token q23s4987djaq2
 <br>
 <br>
 
-```javascript
-ebash t15 make fn <name>
-ebash t15 make class <name>
-```
+```ebash t15 make fn <name>```
+```ebash t15 make class <name>```
 
 Создает функциональный или классовый компонент в папке, с index.ts, файлом компонента, подключеным `React` и создаными интерфейсами для `props` и `state`
 
-```javascript
-ebash t15 make analyticsClass <path>
-```
+```ebash t15 make analyticsClass <path>```
 Создает классовый компонент, с декоратором AnalyticsWorker и статическими методами для веб-аналитики.
 Для этого нужно указать путь до файла в формате CSV с картой событий. Можно скачать через кнопку download в новой витрине веб-аналитики. 
 
  
-```
+```javascript
 Примеры
 ebash t15 make fn customer
 ebash t15 make fn customerAccount

@@ -1,7 +1,7 @@
 import { Command, Console } from 'nestjs-console';
 import { TplMaker } from 'src/utils/index';
 import * as path from 'path';
-import { getAnalyticsInfoFromEventsMap, makeClassName } from './analytics-parser.service';
+import { getAnalyticsInfoFromEventsMap, makeClassName, makeFileName } from './analytics-parser.service';
 
 @Console({
     name: 'make',
@@ -36,7 +36,8 @@ export class T15MakeService {
 
         for (const [category, events] of Object.entries(info)) {
             const className = makeClassName(category);
-            maker.makeFromTpl({category, className, events});
+            const fileName = makeFileName(category);
+            maker.makeFromTpl({category, className, events, fileName});
         }
     }
 }
