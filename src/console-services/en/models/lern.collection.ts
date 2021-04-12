@@ -66,7 +66,7 @@ export class LernCollection {
     }
     const sliceItems = items.filter((lernModel) => {
       return !errorIds.includes(lernModel.id);
-    }).slice(0, 5 - errorIds.length);
+    });
 
     const fullErrorItems = [...sliceItems, ...errorWords];
     return fullErrorItems[randomInt(0, fullErrorItems.length - 1)];

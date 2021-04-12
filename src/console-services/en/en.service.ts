@@ -4,8 +4,13 @@ import * as translate from 'translate';
 import { randomInt } from '../../utils';
 import { LernCollection } from './models/lern.collection';
 import { LernModel } from './models/lern.model';
-
+const { Worker } = require('worker_threads')
+const spawn = require('child_process').exec;
 translate.engine = 'libre';
+
+function runService(workerData) {
+   spawn(`node ./test.js ${workerData}`);
+}
 
 const promt = inquirer.createPromptModule();
 
@@ -151,7 +156,6 @@ export class En2Service {
   async loopLern(config: ILoopLernConfig, lernModel?: LernModel): Promise<void> {
     console.clear();
     lernModel = lernModel || config.collection.selectRandomLernModel();
-
     const answerResult = await this.showQuestion(config, lernModel);
     if (typeof answerResult === 'boolean') {
       if (answerResult) {
@@ -275,8 +279,10 @@ export class En2Service {
       }
 
       if (reversDirectionWord.includes(answer)) {
+        runService(`https://poliglot16.ru/audio/verbs/${answer}.mp3`);
         return true;
       } else {
+        runService(`https://poliglot16.ru/audio/verbs/${reversDirectionWord[0]}.mp3`);
         return false;
       }
     }
@@ -325,8 +331,8 @@ export class En2Service {
         name: 'answer',
         message: `${direction} ${directionWord}`,
         choices: [
-          { name: 'Настройки', value: '~' },
           ...choceCollection,
+          { name: 'Настройки', value: '~' }
         ],
       });
 
@@ -338,9 +344,11 @@ export class En2Service {
         return action;
       }
 
-      if (reversDirectionWord.includes(answer)) {
+      if (reversDirectionWord.join(', ') === answer) {
+        runService(`https://poliglot16.ru/audio/verbs/${reversDirectionWord[0]}.mp3`);
         return true;
       } else {
+        runService(`https://poliglot16.ru/audio/verbs/${reversDirectionWord[0]}.mp3`);
         return false;
       }
     }
@@ -358,6 +366,6 @@ export class En2Service {
       console.log(`Уже есть ${en}`);
       return;
     }
-    collection.addModel({ en: [en], ru: [ru] })
+    collection.addModel({ en: en.split(','), ru: ru.split(',') })
   }
 }
