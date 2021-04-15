@@ -1,47 +1,47 @@
 import * as fs from 'fs';
 import { randomInt } from '../../../utils';
-import { LernModel } from './lern.model';
+import { LearnModel } from './learn.model';
 
-export class LernCollection {
+export class LearnCollection {
   activeTag = '';
-  items: Array<LernModel> = [];
+  items: Array<LearnModel> = [];
 
   constructor(private filePath: string) {
     this.items = JSON.parse(
       fs.readFileSync(this.filePath, { encoding: 'utf-8' }),
-    ).map(data => new LernModel(data));
+    ).map(data => new LearnModel(data));
   }
 
-  addLernModerTag(lernModel: LernModel, tag: string): void {
-    const id = lernModel.tags.findIndex(w => w === tag);
+  addLearnModerTag(learnModel: LearnModel, tag: string): void {
+    const id = learnModel.tags.findIndex(w => w === tag);
     if (id === -1) {
-      lernModel.tags.push(tag);
+      learnModel.tags.push(tag);
       this.saveCollection();
     }
   }
 
   addModel(data: any): void {
-    const lernModel = new LernModel(data);
-    this.items.push(lernModel);
+    const learnModel = new LearnModel(data);
+    this.items.push(learnModel);
     this.saveCollection();
   }
 
   getTags(): Array<string> {
     const tags = new Set<string>();
-    this.items.forEach((lernModel: LernModel): void => {
-      lernModel.tags.forEach(tag => tags.add(tag));
+    this.items.forEach((learnModel: LearnModel): void => {
+      learnModel.tags.forEach(tag => tags.add(tag));
     });
 
     return Array.from<string>(tags);
   }
 
-  itemsByTag(): Array<LernModel> {
-    return this.items.filter(lernModel => lernModel.tags.includes(this.activeTag));
+  itemsByTag(): Array<LearnModel> {
+    return this.items.filter(learnModel => learnModel.tags.includes(this.activeTag));
   }
 
-  removeLernModerTag(lernModel: LernModel, tag: string): void {
-    const id = lernModel.tags.findIndex(w => w === tag);
-    lernModel.tags.splice(id, 1);
+  removeLearnModerTag(learnModel: LearnModel, tag: string): void {
+    const id = learnModel.tags.findIndex(w => w === tag);
+    learnModel.tags.splice(id, 1);
     this.saveCollection();
   }
 
@@ -49,7 +49,7 @@ export class LernCollection {
     fs.writeFileSync(this.filePath, JSON.stringify(this.items, null, 4));
   }
 
-  selectRandomLernModel(): LernModel {
+  selectRandomLearnModel(): LearnModel {
     const items = this.itemsByTag();
     const errorWords = items.filter(item => {
       if (item.break) {
@@ -59,13 +59,14 @@ export class LernCollection {
       return item.countErrors - item.countSuccess > 2;
     });
 
-    const errorIds = errorWords.map(({ id }: LernModel): string => id);
+    const errorIds = errorWords.map(({ id }: LearnModel): string => id);
 
     if (errorWords.length >= 5) {
       return errorWords[randomInt(0, errorWords.length - 1)];
     }
-    const sliceItems = items.filter((lernModel) => {
-      return !errorIds.includes(lernModel.id);
+
+    const sliceItems = items.filter((learnModel) => {
+      return !errorIds.includes(learnModel.id);
     }).slice(0, 5 - errorIds.length);
 
     const fullErrorItems = [...sliceItems, ...errorWords];
@@ -76,22 +77,22 @@ export class LernCollection {
     this.activeTag = tag;
   }
 
-  toggleBreakInModel(lernMode: LernModel, toggle): void {
-    lernMode.break = toggle;
+  toggleBreakInModel(learnMode: LearnModel, toggle): void {
+    learnMode.break = toggle;
     this.saveCollection();
   }
 
-  upError(item: LernModel): void {
+  upError(item: LearnModel): void {
     item.countErrors++;
     this.saveCollection();
   }
 
-  upRepeat(item: LernModel): void {
+  upRepeat(item: LearnModel): void {
     item.countRepeat++;
     this.saveCollection();
   }
 
-  upSuccess(item: LernModel): void {
+  upSuccess(item: LearnModel): void {
     item.countSuccess++;
     this.saveCollection();
   }

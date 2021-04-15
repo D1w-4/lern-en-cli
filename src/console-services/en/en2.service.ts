@@ -18,7 +18,7 @@ class WordModel {
   break? = false;
   byDayCollection?: number;
   countErrors? = 0;
-  countLerning? = 0;
+  countLearning? = 0;
   countSuccess? = 0;
   en: Array<string> = [];
   phonetics? = '';
@@ -32,7 +32,7 @@ class WordModel {
 
 }
 
-interface IlernFNParams {
+interface IlearnFNParams {
   byDayCollection?: number;
   defaultDirection: string;
   filePath: string;
@@ -47,13 +47,13 @@ interface Ichoices<T> {
   value: T
 }
 
-// yarn console:dev en lern ./book.json
+// yarn console:dev en learn ./book.json
 @Console({
   name: 'en',
   description: 'Учить',
 })
 export class En2Service {
-  private async lernFN(conf: IlernFNParams): Promise<void> {
+  private async learnFN(conf: IlearnFNParams): Promise<void> {
     const {
       defaultDirection,
       repeatDirection,
@@ -175,7 +175,7 @@ export class En2Service {
           }
         });
         fs.writeFileSync(filePath, JSON.stringify(wordCollection, null, 4));
-        await this.lernFN(Object.assign(conf, {
+        await this.learnFN(Object.assign(conf, {
           wordCollection,
           repeatWord: void 0,
         }));
@@ -245,7 +245,7 @@ export class En2Service {
         });
       }
     }
-    word.countLerning++;
+    word.countLearning++;
 
     const [wReverseDirection = '', wDirection = ''] = answer.split('==');
     const isTrueDirection = word[direction].map(s => s.toLowerCase()).includes(wDirection.toLowerCase());
@@ -278,7 +278,7 @@ export class En2Service {
       });
       if (repeat) {
         fs.writeFileSync(filePath, JSON.stringify(wordCollection, null, 4));
-        await this.lernFN(Object.assign(conf, {
+        await this.learnFN(Object.assign(conf, {
           repeatWord: word,
           repeatDirection: direction,
         }));
@@ -289,14 +289,14 @@ export class En2Service {
     if (word.repeat) {
       word.repeat--;
       fs.writeFileSync(filePath, JSON.stringify(wordCollection, null, 4));
-      await this.lernFN(
+      await this.learnFN(
         Object.assign(conf, {
           repeatWord: word,
         }),
       );
       return;
     } else {
-      await this.lernFN(
+      await this.learnFN(
         Object.assign(conf, { repeatWord: void 0 }),
       );
       return;
@@ -314,7 +314,7 @@ export class En2Service {
     } else {
       const sortFile = [...file];
       sortFile.sort((a, b) => {
-        return a.countLerning < b.countLerning ? -1 : 1;
+        return a.countLearning < b.countLearning ? -1 : 1;
       });
       const sliceSortFile = sortFile.slice(0, 5);
       return sliceSortFile[randomInteger(0, sliceSortFile.length - 1)];
@@ -343,12 +343,12 @@ export class En2Service {
   }
 
   @Command({
-    command: 'lern <filePath>',
+    command: 'learn <filePath>',
     description: '',
   })
-  async lern(filePath: string) {
+  async learn(filePath: string) {
     const date = new Date();
-    const wordsLernDate = new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
+    const wordsLearnDate = new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
 
     const file = JSON.parse(fs.readFileSync(filePath, { encoding: 'utf-8' }));
     const wordCollection = file.filter((word) => {
@@ -418,7 +418,7 @@ export class En2Service {
       });
       nextWordList.forEach((index: number) => {
         if (filteredWordCollection[index]) {
-          filteredWordCollection[index].byDayCollection = wordsLernDate;
+          filteredWordCollection[index].byDayCollection = wordsLearnDate;
         }
       });
       fs.writeFileSync(filePath, JSON.stringify(wordCollection, null, 4));
@@ -464,10 +464,10 @@ export class En2Service {
       message: 'Режим?',
     });
 
-    await this.lernFN({
+    await this.learnFN({
       wordCollection,
       defaultDirection,
-      byDayCollection: selectByDateCollection === 'new' ? wordsLernDate : selectByDateCollection,
+      byDayCollection: selectByDateCollection === 'new' ? wordsLearnDate : selectByDateCollection,
       mode,
       filePath,
     });

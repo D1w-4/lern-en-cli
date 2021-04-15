@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-export class LernModel {
+export class LearnModel {
   /**
    * пропуск модели
    */
@@ -23,9 +23,10 @@ export class LernModel {
   countSuccess = 0;
   en: Array<string> = [];
   ru: Array<string> = [];
+
   id: string;
-  constructor(lernData: any) {
-    Object.assign(this, lernData);
+  constructor(learnData: any) {
+    Object.assign(this, learnData);
     if (!this.id) {
       this.id = uuidv4();
     }

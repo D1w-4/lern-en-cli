@@ -1,12 +1,15 @@
 [
     {
         "break": false,
-        "tags": [],
-        "countErrors": 9,
-        "countRepeat": 18,
-        "countSuccess": 20,
+        "tags": [
+            "test42"
+        ],
+        "countErrors": 12,
+        "countRepeat": 24,
+        "countSuccess": 23,
         "en": [
-            "be"
+            "be",
+            "bro"
         ],
         "ru": [
             "быть"
@@ -16853,8 +16856,8 @@
             "пятница"
         ],
         "countErrors": 0,
-        "countRepeat": 5,
-        "countSuccess": 5,
+        "countRepeat": 6,
+        "countSuccess": 6,
         "en": [
             "fly"
         ],
@@ -16890,8 +16893,8 @@
         "tags": [
             "пятница"
         ],
-        "countErrors": 0,
-        "countRepeat": 3,
+        "countErrors": 4,
+        "countRepeat": 7,
         "countSuccess": 3,
         "en": [
             "manage"
@@ -17002,9 +17005,9 @@
         "tags": [
             "пятница"
         ],
-        "countErrors": 0,
-        "countRepeat": 4,
-        "countSuccess": 4,
+        "countErrors": 1,
+        "countRepeat": 6,
+        "countSuccess": 5,
         "en": [
             "politics"
         ],
