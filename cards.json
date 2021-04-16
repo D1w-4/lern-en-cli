@@ -5,9 +5,9 @@
             "one",
             "two"
         ],
-        "countErrors": 22,
-        "countRepeat": 41,
-        "countSuccess": 19,
+        "countErrors": 24,
+        "countRepeat": 45,
+        "countSuccess": 21,
         "en": [
             "teach",
             "taught"
@@ -74,9 +74,9 @@
             "one",
             "two"
         ],
-        "countErrors": 11,
-        "countRepeat": 23,
-        "countSuccess": 12,
+        "countErrors": 13,
+        "countRepeat": 27,
+        "countSuccess": 14,
         "en": [
             "bring",
             "bought"
@@ -155,9 +155,9 @@
         "tags": [
             "two"
         ],
-        "countErrors": 0,
-        "countRepeat": 0,
-        "countSuccess": 0,
+        "countErrors": 1,
+        "countRepeat": 7,
+        "countSuccess": 6,
         "en": [
             "bleed",
             "bled"
@@ -173,8 +173,8 @@
             "two"
         ],
         "countErrors": 5,
-        "countRepeat": 8,
-        "countSuccess": 3,
+        "countRepeat": 10,
+        "countSuccess": 5,
         "en": [
             "breed",
             "bred"
@@ -191,8 +191,8 @@
             "two"
         ],
         "countErrors": 16,
-        "countRepeat": 26,
-        "countSuccess": 10,
+        "countRepeat": 32,
+        "countSuccess": 16,
         "en": [
             "creep",
             "crept"
@@ -208,8 +208,8 @@
             "two"
         ],
         "countErrors": 2,
-        "countRepeat": 4,
-        "countSuccess": 2,
+        "countRepeat": 5,
+        "countSuccess": 3,
         "en": [
             "say",
             "said"
@@ -225,8 +225,8 @@
             "two"
         ],
         "countErrors": 0,
-        "countRepeat": 2,
-        "countSuccess": 2,
+        "countRepeat": 6,
+        "countSuccess": 6,
         "en": [
             "send",
             "sent"
@@ -242,8 +242,8 @@
             "two"
         ],
         "countErrors": 0,
-        "countRepeat": 3,
-        "countSuccess": 3,
+        "countRepeat": 7,
+        "countSuccess": 7,
         "en": [
             "speed",
             "sped"
@@ -259,9 +259,9 @@
         "tags": [
             "two"
         ],
-        "countErrors": 2,
-        "countRepeat": 3,
-        "countSuccess": 1,
+        "countErrors": 4,
+        "countRepeat": 6,
+        "countSuccess": 2,
         "en": [
             "hew",
             "hewed"
@@ -277,8 +277,8 @@
             "two"
         ],
         "countErrors": 4,
-        "countRepeat": 6,
-        "countSuccess": 2,
+        "countRepeat": 7,
+        "countSuccess": 3,
         "en": [
             "prove",
             "proved"
@@ -310,9 +310,9 @@
         "tags": [
             "two"
         ],
-        "countErrors": 8,
-        "countRepeat": 13,
-        "countSuccess": 5,
+        "countErrors": 10,
+        "countRepeat": 20,
+        "countSuccess": 10,
         "en": [
             "shoe",
             "shod"
@@ -329,8 +329,8 @@
             "two"
         ],
         "countErrors": 0,
-        "countRepeat": 4,
-        "countSuccess": 4,
+        "countRepeat": 6,
+        "countSuccess": 6,
         "en": [
             "shoot",
             "shot"
@@ -345,9 +345,9 @@
         "tags": [
             "two"
         ],
-        "countErrors": 3,
-        "countRepeat": 7,
-        "countSuccess": 4,
+        "countErrors": 4,
+        "countRepeat": 14,
+        "countSuccess": 10,
         "en": [
             "lose",
             "lost"
@@ -378,9 +378,9 @@
         "tags": [
             "two"
         ],
-        "countErrors": 3,
-        "countRepeat": 5,
-        "countSuccess": 2,
+        "countErrors": 8,
+        "countRepeat": 14,
+        "countSuccess": 6,
         "en": [
             "abide",
             "abode"

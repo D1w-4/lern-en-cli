@@ -24,7 +24,9 @@ export class ChoicePMService extends AbstractPracticMode {
       });
       return acc;
     }, []);
-
+    choceCollection.sort(() => {
+      return randomInt(0, 100) > randomInt(0, 100) ? 1 : -1;
+    });
     const directionWord = learnModel[direction.direction].join(', ');
     const { answer } = await promt({
       type: 'list',
