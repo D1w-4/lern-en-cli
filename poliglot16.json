@@ -1,0 +1,230 @@
+[
+    {
+        "break": false,
+        "tags": [
+            "Притяжательные кого? кому?"
+        ],
+        "countErrors": 4,
+        "countRepeat": 10,
+        "countSuccess": 6,
+        "en": [
+            "me"
+        ],
+        "ru": [
+            "меня",
+            "мне"
+        ],
+        "id": "b2751941-9460-4fd6-b843-e0776a9f62ec"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Притяжательные кого? кому?"
+        ],
+        "countErrors": 3,
+        "countRepeat": 12,
+        "countSuccess": 9,
+        "en": [
+            "him"
+        ],
+        "ru": [
+            "его"
+        ],
+        "id": "60aa8953-9002-49cd-b121-7f3f122feffe"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Притяжательные кого? кому?"
+        ],
+        "countErrors": 1,
+        "countRepeat": 7,
+        "countSuccess": 6,
+        "en": [
+            "her"
+        ],
+        "ru": [
+            "ее"
+        ],
+        "id": "71f7c10e-333c-49c8-98cd-4b695c9484b2"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Притяжательные кого? кому?"
+        ],
+        "countErrors": 0,
+        "countRepeat": 8,
+        "countSuccess": 8,
+        "en": [
+            "us"
+        ],
+        "ru": [
+            "нас"
+        ],
+        "id": "223b666f-ae8f-412d-af37-582a5ec28b20"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Притяжательные кого? кому?"
+        ],
+        "countErrors": 2,
+        "countRepeat": 11,
+        "countSuccess": 9,
+        "en": [
+            "them"
+        ],
+        "ru": [
+            "их"
+        ],
+        "id": "14a1b28b-fcc5-4eb8-a47b-dcbc726b7ac2"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Вопросы"
+        ],
+        "countErrors": 6,
+        "countRepeat": 39,
+        "countSuccess": 33,
+        "en": [
+            "what"
+        ],
+        "ru": [
+            "что",
+            "какой"
+        ],
+        "id": "3980fe3d-4986-4f91-8db3-161765e63b69"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Вопросы"
+        ],
+        "countErrors": 5,
+        "countRepeat": 29,
+        "countSuccess": 24,
+        "en": [
+            "where"
+        ],
+        "ru": [
+            "где",
+            "куда"
+        ],
+        "id": "b3fbce9f-7f12-437c-855b-0148aa41633c"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Вопросы"
+        ],
+        "countErrors": 3,
+        "countRepeat": 29,
+        "countSuccess": 26,
+        "en": [
+            "when"
+        ],
+        "ru": [
+            "когда"
+        ],
+        "id": "feb6ceef-01da-49de-ab80-e80b7e6c0a0a"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Вопросы"
+        ],
+        "countErrors": 9,
+        "countRepeat": 37,
+        "countSuccess": 28,
+        "en": [
+            "why"
+        ],
+        "ru": [
+            "почему",
+            "зачем"
+        ],
+        "id": "5baba34c-011b-4c5d-8f3a-a0ea0e073989"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Вопросы"
+        ],
+        "countErrors": 5,
+        "countRepeat": 29,
+        "countSuccess": 24,
+        "en": [
+            "who"
+        ],
+        "ru": [
+            "кто"
+        ],
+        "id": "a858b744-0231-44da-bed9-d09bd3be4dee"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Вопросы"
+        ],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "how"
+        ],
+        "ru": [
+            "как"
+        ],
+        "id": "795fce9b-500c-4cc7-88fb-c5315ed67af7"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Предлоги"
+        ],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "in"
+        ],
+        "ru": [
+            "в"
+        ],
+        "id": "9085da5e-4e5d-4bb6-84d0-fb84d3f75e7f"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Предлоги"
+        ],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "to"
+        ],
+        "ru": [
+            "к"
+        ],
+        "id": "7f704518-b5ef-43a9-ba7c-7ccfb9973d64"
+    },
+    {
+        "break": false,
+        "tags": [
+            "Предлоги"
+        ],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "from"
+        ],
+        "ru": [
+            "из"
+        ],
+        "id": "09cc0df4-ff85-4759-b514-cc0ac8a051ed"
+    }
+]

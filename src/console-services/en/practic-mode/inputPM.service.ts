@@ -21,11 +21,9 @@ export class InputPMService extends AbstractPracticMode {
 
   checkAnswer(direction: TDirection, learnModel: LearnModel, answer: string): boolean {
     const answerList = AbstractPracticMode.prepareAnswer(answer);
-    const directionWord = learnModel[direction.direction];
     const reversDirectionWord = learnModel[direction.reversDirection];
     return answerList.every(word => {
-      const splitAnswer = word.toLowerCase().split('==');
-      return reversDirectionWord.includes(splitAnswer[0]) && directionWord.includes(splitAnswer[1]);
+      return reversDirectionWord.includes(word);
     });
   }
 }

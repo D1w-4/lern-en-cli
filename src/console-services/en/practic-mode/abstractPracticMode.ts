@@ -6,6 +6,6 @@ export abstract class AbstractPracticMode {
   static prepareAnswer(answer: string): Array<string> {
     return answer.split(',').map(s => s.toLowerCase().trim());
   }
-  abstract async ask(direction: TDirection, learnModel: LearnModel): Promise<string>
+  abstract async ask(direction: TDirection, learnModel: LearnModel, items: Array<LearnModel>): Promise<string>
   abstract checkAnswer(direction: TDirection, learnModel: LearnModel, answer: string): boolean;
 }

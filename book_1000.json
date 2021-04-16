@@ -45,8 +45,8 @@
         "tags": [
             "test"
         ],
-        "countErrors": 4,
-        "countRepeat": 5,
+        "countErrors": 5,
+        "countRepeat": 6,
         "countSuccess": 3,
         "en": [
             "of"

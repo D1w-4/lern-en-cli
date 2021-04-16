@@ -1,0 +1,3750 @@
+[
+    {
+        "break": true,
+        "tags": [],
+        "countErrors": 16,
+        "countRepeat": 34,
+        "countSuccess": 18,
+        "en": [
+            "read",
+            "read",
+            "read"
+        ],
+        "ru": [
+            "читать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/read.mp3",
+                "https://poliglot16.ru/audio/verbs/read.mp3",
+                "https://poliglot16.ru/audio/verbs/read.mp3"
+            ]
+        },
+        "id": "6a407c44-3526-4ebc-909f-5927756c507e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 8,
+        "countRepeat": 23,
+        "countSuccess": 15,
+        "en": [
+            "set",
+            "set",
+            "set"
+        ],
+        "ru": [
+            "устанавливать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/set.mp3",
+                "https://poliglot16.ru/audio/verbs/set.mp3",
+                "https://poliglot16.ru/audio/verbs/set.mp3"
+            ]
+        },
+        "id": "43fe20cf-cf74-4d3b-8ecf-f096a83904ae"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 9,
+        "countRepeat": 29,
+        "countSuccess": 20,
+        "en": [
+            "cost",
+            "cost",
+            "cost"
+        ],
+        "ru": [
+            "стоить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/cost.mp3",
+                "https://poliglot16.ru/audio/verbs/cost.mp3",
+                "https://poliglot16.ru/audio/verbs/cost.mp3"
+            ]
+        },
+        "id": "23557154-8ab2-4d2f-9950-7aaaf99c2126"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 12,
+        "countRepeat": 37,
+        "countSuccess": 25,
+        "en": [
+            "let",
+            "let",
+            "let"
+        ],
+        "ru": [
+            "пустить, дать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/let.mp3",
+                "https://poliglot16.ru/audio/verbs/let.mp3",
+                "https://poliglot16.ru/audio/verbs/let.mp3"
+            ]
+        },
+        "id": "99c03f8b-f691-4a88-9c54-59359e43893e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 10,
+        "countRepeat": 33,
+        "countSuccess": 23,
+        "en": [
+            "put",
+            "put",
+            "put"
+        ],
+        "ru": [
+            "класть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/put.mp3",
+                "https://poliglot16.ru/audio/verbs/put.mp3",
+                "https://poliglot16.ru/audio/verbs/put.mp3"
+            ]
+        },
+        "id": "6c7229fc-aa8e-4425-b9a9-4f9aecbc665a"
+    },
+    {
+        "break": false,
+        "tags": [
+            "1st==2st==3st"
+        ],
+        "countErrors": 15,
+        "countRepeat": 38,
+        "countSuccess": 23,
+        "en": [
+            "bid",
+            "bid",
+            "bid"
+        ],
+        "ru": [
+            "велеть, просить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/bid.mp3",
+                "https://poliglot16.ru/audio/verbs/bid.mp3",
+                "https://poliglot16.ru/audio/verbs/bid.mp3"
+            ]
+        },
+        "id": "b11662f1-b457-46ae-b741-2e5b3560e678"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 7,
+        "countRepeat": 14,
+        "countSuccess": 7,
+        "en": [
+            "cut",
+            "cut",
+            "cut"
+        ],
+        "ru": [
+            "резать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/cut.mp3",
+                "https://poliglot16.ru/audio/verbs/cut.mp3",
+                "https://poliglot16.ru/audio/verbs/cut.mp3"
+            ]
+        },
+        "id": "341def71-ee8c-47f1-9609-43b8a80056c4"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 5,
+        "countRepeat": 13,
+        "countSuccess": 8,
+        "en": [
+            "input",
+            "input",
+            "input"
+        ],
+        "ru": [
+            "входить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/input.mp3",
+                "https://poliglot16.ru/audio/verbs/input.mp3",
+                "https://poliglot16.ru/audio/verbs/input.mp3"
+            ]
+        },
+        "id": "ac36fdf3-9525-435e-bba6-0684cdf26d64"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 5,
+        "countRepeat": 13,
+        "countSuccess": 8,
+        "en": [
+            "output",
+            "output",
+            "output"
+        ],
+        "ru": [
+            "выходить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/output.mp3",
+                "https://poliglot16.ru/audio/verbs/output.mp3",
+                "https://poliglot16.ru/audio/verbs/output.mp3"
+            ]
+        },
+        "id": "82bff7f4-8ed5-4ef9-8b7b-fb2ca5fd3672"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 6,
+        "countRepeat": 24,
+        "countSuccess": 18,
+        "en": [
+            "hit",
+            "hit",
+            "hit"
+        ],
+        "ru": [
+            "ударить, попасть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/hit.mp3",
+                "https://poliglot16.ru/audio/verbs/hit.mp3",
+                "https://poliglot16.ru/audio/verbs/hit.mp3"
+            ]
+        },
+        "id": "d396ea6b-9bf3-4e87-99ce-4d91a247468d"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 6,
+        "countRepeat": 17,
+        "countSuccess": 11,
+        "en": [
+            "cast",
+            "cast",
+            "cast"
+        ],
+        "ru": [
+            "кинуть, лить металл"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/cast.mp3",
+                "https://poliglot16.ru/audio/verbs/cast.mp3",
+                "https://poliglot16.ru/audio/verbs/cast.mp3"
+            ]
+        },
+        "id": "9c5c7e4e-b24c-4435-b793-b4311d873fd3"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 4,
+        "countRepeat": 17,
+        "countSuccess": 13,
+        "en": [
+            "forecast",
+            "forecast",
+            "forecast"
+        ],
+        "ru": [
+            "предсказывать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/forecast.mp3",
+                "https://poliglot16.ru/audio/verbs/forecast.mp3",
+                "https://poliglot16.ru/audio/verbs/forecast.mp3"
+            ]
+        },
+        "id": "bb017640-e842-4f6a-b048-aaa39f24eb7a"
+    },
+    {
+        "break": false,
+        "tags": [
+            "1st==2st==3st"
+        ],
+        "countErrors": 9,
+        "countRepeat": 39,
+        "countSuccess": 30,
+        "en": [
+            "spread",
+            "spread",
+            "spread"
+        ],
+        "ru": [
+            "распространиться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/spread.mp3",
+                "https://poliglot16.ru/audio/verbs/spread.mp3",
+                "https://poliglot16.ru/audio/verbs/spread.mp3"
+            ]
+        },
+        "id": "6527bb41-0eeb-4dd7-a629-6e5adb4c1f31"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 3,
+        "countRepeat": 15,
+        "countSuccess": 12,
+        "en": [
+            "wet",
+            "wet",
+            "wet"
+        ],
+        "ru": [
+            "мочить, увлажнять"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/wet.mp3",
+                "https://poliglot16.ru/audio/verbs/wet.mp3",
+                "https://poliglot16.ru/audio/verbs/wet.mp3"
+            ]
+        },
+        "id": "84bea6ce-0160-483e-be0a-21e560594067"
+    },
+    {
+        "break": false,
+        "tags": [
+            "1st==2st==3st"
+        ],
+        "countErrors": 12,
+        "countRepeat": 44,
+        "countSuccess": 32,
+        "en": [
+            "split",
+            "split",
+            "split"
+        ],
+        "ru": [
+            "расщепить(ся)"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/split.mp3",
+                "https://poliglot16.ru/audio/verbs/split.mp3",
+                "https://poliglot16.ru/audio/verbs/split.mp3"
+            ]
+        },
+        "id": "d2a0ed4f-4642-4199-8bd8-16736b6fe26d"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 8,
+        "countRepeat": 19,
+        "countSuccess": 11,
+        "en": [
+            "broadcast",
+            "broadcast",
+            "broadcast"
+        ],
+        "ru": [
+            "распространять, разбрасывать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/broadcast.mp3",
+                "https://poliglot16.ru/audio/verbs/broadcast.mp3",
+                "https://poliglot16.ru/audio/verbs/broadcast.mp3"
+            ]
+        },
+        "id": "6b86a768-c9a1-47ed-b599-5b3ee234dbdc"
+    },
+    {
+        "break": false,
+        "tags": [
+            "1st==2st==3st"
+        ],
+        "countErrors": 20,
+        "countRepeat": 59,
+        "countSuccess": 39,
+        "en": [
+            "bet",
+            "bet",
+            "bet"
+        ],
+        "ru": [
+            "держать пари"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/bet.mp3",
+                "https://poliglot16.ru/audio/verbs/bet.mp3",
+                "https://poliglot16.ru/audio/verbs/bet.mp3"
+            ]
+        },
+        "id": "63c3f9b3-22c6-4519-9a98-a74717f0fcb2"
+    },
+    {
+        "break": false,
+        "tags": [
+            "1st==2st==3st"
+        ],
+        "countErrors": 17,
+        "countRepeat": 45,
+        "countSuccess": 28,
+        "en": [
+            "hurt",
+            "hurt",
+            "hurt"
+        ],
+        "ru": [
+            "причинить боль"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/hurt.mp3",
+                "https://poliglot16.ru/audio/verbs/hurt.mp3",
+                "https://poliglot16.ru/audio/verbs/hurt.mp3"
+            ]
+        },
+        "id": "47d320dc-f7e1-4d37-a6c6-8c1d3a21e109"
+    },
+    {
+        "break": false,
+        "tags": [
+            "1st==2st==3st"
+        ],
+        "countErrors": 16,
+        "countRepeat": 45,
+        "countSuccess": 29,
+        "en": [
+            "shut",
+            "shut",
+            "shut"
+        ],
+        "ru": [
+            "закрывать,запирать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/shut.mp3",
+                "https://poliglot16.ru/audio/verbs/shut.mp3",
+                "https://poliglot16.ru/audio/verbs/shut.mp3"
+            ]
+        },
+        "id": "70981fc5-14bd-4c61-a261-aad53dbf5c23"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 12,
+        "countRepeat": 29,
+        "countSuccess": 17,
+        "en": [
+            "quit",
+            "quit",
+            "quit"
+        ],
+        "ru": [
+            "покидать, оставлять"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/quit.mp3",
+                "https://poliglot16.ru/audio/verbs/quit.mp3",
+                "https://poliglot16.ru/audio/verbs/quit.mp3"
+            ]
+        },
+        "id": "dbf58305-72f2-4265-af56-d135c59c3f75"
+    },
+    {
+        "break": false,
+        "tags": [
+            "1st==2st==3st"
+        ],
+        "countErrors": 17,
+        "countRepeat": 44,
+        "countSuccess": 27,
+        "en": [
+            "rid",
+            "rid",
+            "rid"
+        ],
+        "ru": [
+            "избавлять"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/rid.mp3",
+                "https://poliglot16.ru/audio/verbs/rid.mp3",
+                "https://poliglot16.ru/audio/verbs/rid.mp3"
+            ]
+        },
+        "id": "f0a2ff8c-7fa7-4c16-9e41-fb4a57f1a656"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 5,
+        "countRepeat": 13,
+        "countSuccess": 8,
+        "en": [
+            "shed",
+            "shed",
+            "shed"
+        ],
+        "ru": [
+            "проливать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/shed.mp3",
+                "https://poliglot16.ru/audio/verbs/shed.mp3",
+                "https://poliglot16.ru/audio/verbs/shed.mp3"
+            ]
+        },
+        "id": "7e71144d-aa4f-4a68-892b-ceb3b8b1d931"
+    },
+    {
+        "break": false,
+        "tags": [
+            "1st==2st==3st"
+        ],
+        "countErrors": 15,
+        "countRepeat": 43,
+        "countSuccess": 28,
+        "en": [
+            "burst",
+            "burst",
+            "burst"
+        ],
+        "ru": [
+            "разразиться, взорваться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/burst.mp3",
+                "https://poliglot16.ru/audio/verbs/burst.mp3",
+                "https://poliglot16.ru/audio/verbs/burst.mp3"
+            ]
+        },
+        "id": "6f7e5b4c-00a7-4aab-ae35-55bf4eaacd7b"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 9,
+        "countRepeat": 25,
+        "countSuccess": 16,
+        "en": [
+            "knit",
+            "knit",
+            "knit"
+        ],
+        "ru": [
+            "вязать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/knit.mp3",
+                "https://poliglot16.ru/audio/verbs/knit.mp3",
+                "https://poliglot16.ru/audio/verbs/knit.mp3"
+            ]
+        },
+        "id": "c6161d57-c654-405b-9b8d-aad5bf09dd05"
+    },
+    {
+        "break": false,
+        "tags": [
+            "1st==2st==3st"
+        ],
+        "countErrors": 17,
+        "countRepeat": 40,
+        "countSuccess": 23,
+        "en": [
+            "bust",
+            "bust",
+            "bust"
+        ],
+        "ru": [
+            "разжаловать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/bust.mp3",
+                "https://poliglot16.ru/audio/verbs/bust.mp3",
+                "https://poliglot16.ru/audio/verbs/bust.mp3"
+            ]
+        },
+        "id": "ff533120-d855-45c2-b016-cf907e86d372"
+    },
+    {
+        "break": false,
+        "tags": [
+            "1st==2st==3st"
+        ],
+        "countErrors": 31,
+        "countRepeat": 64,
+        "countSuccess": 33,
+        "en": [
+            "thrust",
+            "thrust",
+            "thrust"
+        ],
+        "ru": [
+            "толкнуть, сунуть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/thrust.mp3",
+                "https://poliglot16.ru/audio/verbs/thrust.mp3",
+                "https://poliglot16.ru/audio/verbs/thrust.mp3"
+            ]
+        },
+        "id": "40ff974a-3b20-4435-bb92-0f186857c392"
+    },
+    {
+        "break": false,
+        "tags": [
+            "1st==2st==3st"
+        ],
+        "countErrors": 8,
+        "countRepeat": 40,
+        "countSuccess": 32,
+        "en": [
+            "slit",
+            "slit",
+            "slit"
+        ],
+        "ru": [
+            "раздирать(ся), разрезать (вдоль)"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/slit.mp3",
+                "https://poliglot16.ru/audio/verbs/slit.mp3",
+                "https://poliglot16.ru/audio/verbs/slit.mp3"
+            ]
+        },
+        "id": "d07f226f-cd8b-4bce-abd5-ea5926435091"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "have",
+            "had",
+            "had"
+        ],
+        "ru": [
+            "иметь"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/have.mp3",
+                "https://poliglot16.ru/audio/verbs/had.mp3",
+                "https://poliglot16.ru/audio/verbs/had.mp3"
+            ]
+        },
+        "id": "88271c58-198e-48c7-983e-649c3253aabe"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "get",
+            "got",
+            "got"
+        ],
+        "ru": [
+            "получить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/get.mp3",
+                "https://poliglot16.ru/audio/verbs/got.mp3",
+                "https://poliglot16.ru/audio/verbs/got.mp3"
+            ]
+        },
+        "id": "004178e0-71d1-4660-baca-20cfba1f91b6"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "find",
+            "found",
+            "found"
+        ],
+        "ru": [
+            "находить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/find.mp3",
+                "https://poliglot16.ru/audio/verbs/found.mp3",
+                "https://poliglot16.ru/audio/verbs/found.mp3"
+            ]
+        },
+        "id": "0e99379d-2768-47e6-9e07-695099d8120d"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "buy",
+            "bought",
+            "bought"
+        ],
+        "ru": [
+            "купить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/buy.mp3",
+                "https://poliglot16.ru/audio/verbs/bought.mp3",
+                "https://poliglot16.ru/audio/verbs/bought.mp3"
+            ]
+        },
+        "id": "006ff6bd-6ad0-45b3-a618-156e52cb22ce"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "make",
+            "made",
+            "made"
+        ],
+        "ru": [
+            "делать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/make.mp3",
+                "https://poliglot16.ru/audio/verbs/made.mp3",
+                "https://poliglot16.ru/audio/verbs/made.mp3"
+            ]
+        },
+        "id": "7307ccf3-bdaa-4f49-83e1-24305879168b"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "send",
+            "sent",
+            "sent"
+        ],
+        "ru": [
+            "послать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/send.mp3",
+                "https://poliglot16.ru/audio/verbs/sent.mp3",
+                "https://poliglot16.ru/audio/verbs/sent.mp3"
+            ]
+        },
+        "id": "84636010-fe0f-4ee5-99a1-a72540b27b48"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "think",
+            "thought",
+            "thought"
+        ],
+        "ru": [
+            "думать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/think.mp3",
+                "https://poliglot16.ru/audio/verbs/thought.mp3",
+                "https://poliglot16.ru/audio/verbs/thought.mp3"
+            ]
+        },
+        "id": "05b54eb7-5724-481a-8ed6-ad30aee7549e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "learn",
+            "learnt",
+            "learnt"
+        ],
+        "ru": [
+            "учить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/learn.mp3",
+                "https://poliglot16.ru/audio/verbs/learnt.mp3",
+                "https://poliglot16.ru/audio/verbs/learnt.mp3"
+            ]
+        },
+        "id": "80be5883-0cc4-4d4b-8893-3e4c710c7a72"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "say",
+            "said",
+            "said"
+        ],
+        "ru": [
+            "говорить, сказать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/say.mp3",
+                "https://poliglot16.ru/audio/verbs/said.mp3",
+                "https://poliglot16.ru/audio/verbs/said.mp3"
+            ]
+        },
+        "id": "0ac5ca19-8ced-46d2-9ac6-0988bbeed0f0"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "sell",
+            "sold",
+            "sold"
+        ],
+        "ru": [
+            "продавать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/sell.mp3",
+                "https://poliglot16.ru/audio/verbs/sold.mp3",
+                "https://poliglot16.ru/audio/verbs/sold.mp3"
+            ]
+        },
+        "id": "ea682ad9-87c4-4e7e-a2e4-8215aca099bc"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "pay",
+            "paid",
+            "paid"
+        ],
+        "ru": [
+            "платить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/pay.mp3",
+                "https://poliglot16.ru/audio/verbs/paid.mp3",
+                "https://poliglot16.ru/audio/verbs/paid.mp3"
+            ]
+        },
+        "id": "ed841dcb-2124-4be9-805d-bf80d2dc344d"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "light",
+            "lit",
+            "lit"
+        ],
+        "ru": [
+            "осветить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/light.mp3",
+                "https://poliglot16.ru/audio/verbs/lit.mp3",
+                "https://poliglot16.ru/audio/verbs/lit.mp3"
+            ]
+        },
+        "id": "5bc60952-57a4-454e-9112-e01c77f7b227"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "keep",
+            "kept",
+            "kept"
+        ],
+        "ru": [
+            "хранить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/keep.mp3",
+                "https://poliglot16.ru/audio/verbs/kept.mp3",
+                "https://poliglot16.ru/audio/verbs/kept.mp3"
+            ]
+        },
+        "id": "d17b50a9-5de2-4769-82cc-31a68acae3ff"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "tell",
+            "told",
+            "told"
+        ],
+        "ru": [
+            "рассказывать, сказать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/tell.mp3",
+                "https://poliglot16.ru/audio/verbs/told.mp3",
+                "https://poliglot16.ru/audio/verbs/told.mp3"
+            ]
+        },
+        "id": "ee8626b3-b2cc-418d-9256-d47db0742332"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "meet",
+            "met",
+            "met"
+        ],
+        "ru": [
+            "встретить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/meet.mp3",
+                "https://poliglot16.ru/audio/verbs/met.mp3",
+                "https://poliglot16.ru/audio/verbs/met.mp3"
+            ]
+        },
+        "id": "c5d323ef-8a9c-4336-85a3-1bd29fdccff8"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "feel",
+            "felt",
+            "felt"
+        ],
+        "ru": [
+            "чувствовать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/feel.mp3",
+                "https://poliglot16.ru/audio/verbs/felt.mp3",
+                "https://poliglot16.ru/audio/verbs/felt.mp3"
+            ]
+        },
+        "id": "a053dc52-f158-44d7-8fba-eb9c98518a5d"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "speed",
+            "sped",
+            "sped"
+        ],
+        "ru": [
+            "ускорять, спешить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/speed.mp3",
+                "https://poliglot16.ru/audio/verbs/sped.mp3",
+                "https://poliglot16.ru/audio/verbs/sped.mp3"
+            ]
+        },
+        "id": "d64126a3-1bd8-467b-b5f8-84a14aaf6677"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "mean",
+            "meant",
+            "meant"
+        ],
+        "ru": [
+            "подразумевать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/mean.mp3",
+                "https://poliglot16.ru/audio/verbs/meant.mp3",
+                "https://poliglot16.ru/audio/verbs/meant.mp3"
+            ]
+        },
+        "id": "0e0e0a53-4dce-4785-a316-e49bbbac3630"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "build",
+            "built",
+            "built"
+        ],
+        "ru": [
+            "строить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/build.mp3",
+                "https://poliglot16.ru/audio/verbs/built.mp3",
+                "https://poliglot16.ru/audio/verbs/built.mp3"
+            ]
+        },
+        "id": "d9d7162d-a8f3-43e2-b417-de9227d08f64"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "leave",
+            "left",
+            "left"
+        ],
+        "ru": [
+            "оставить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/leave.mp3",
+                "https://poliglot16.ru/audio/verbs/left.mp3",
+                "https://poliglot16.ru/audio/verbs/left.mp3"
+            ]
+        },
+        "id": "cb967d8a-88de-4a0b-86bb-146cef6ef516"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "lead",
+            "led",
+            "led"
+        ],
+        "ru": [
+            "вести"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/lead.mp3",
+                "https://poliglot16.ru/audio/verbs/led.mp3",
+                "https://poliglot16.ru/audio/verbs/led.mp3"
+            ]
+        },
+        "id": "2998f2db-29eb-4705-8b53-fc1ca129528f"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "win",
+            "won",
+            "won"
+        ],
+        "ru": [
+            "выиграть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/win.mp3",
+                "https://poliglot16.ru/audio/verbs/won.mp3",
+                "https://poliglot16.ru/audio/verbs/won.mp3"
+            ]
+        },
+        "id": "6b53de4d-bd37-4a05-ab75-9ece3327d7da"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "deal",
+            "dealt",
+            "dealt"
+        ],
+        "ru": [
+            "иметь дело"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/deal.mp3",
+                "https://poliglot16.ru/audio/verbs/dealt.mp3",
+                "https://poliglot16.ru/audio/verbs/dealt.mp3"
+            ]
+        },
+        "id": "ef0daee8-38d8-49ef-92d0-25be2d02a475"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "hold",
+            "held",
+            "held"
+        ],
+        "ru": [
+            "держать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/hold.mp3",
+                "https://poliglot16.ru/audio/verbs/held.mp3",
+                "https://poliglot16.ru/audio/verbs/held.mp3"
+            ]
+        },
+        "id": "e390d3ad-ba54-489c-881e-9375a238aba1"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "feed",
+            "fed",
+            "fed"
+        ],
+        "ru": [
+            "кормить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/feed.mp3",
+                "https://poliglot16.ru/audio/verbs/fed.mp3",
+                "https://poliglot16.ru/audio/verbs/fed.mp3"
+            ]
+        },
+        "id": "6548d0f9-507e-4a3f-919c-fe1b644f80ec"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "bring",
+            "brought",
+            "brought"
+        ],
+        "ru": [
+            "принести"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/bring.mp3",
+                "https://poliglot16.ru/audio/verbs/brought.mp3",
+                "https://poliglot16.ru/audio/verbs/brought.mp3"
+            ]
+        },
+        "id": "78a817bd-b903-4df9-b8fe-efba887eb0fa"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "string",
+            "strung",
+            "strung"
+        ],
+        "ru": [
+            "нанизать, натянуть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/string.mp3",
+                "https://poliglot16.ru/audio/verbs/strung.mp3",
+                "https://poliglot16.ru/audio/verbs/strung.mp3"
+            ]
+        },
+        "id": "6a185e35-346c-4c4f-bc17-c2c53de47b04"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "hear",
+            "heard",
+            "heard"
+        ],
+        "ru": [
+            "слышать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/hear.mp3",
+                "https://poliglot16.ru/audio/verbs/heard.mp3",
+                "https://poliglot16.ru/audio/verbs/heard.mp3"
+            ]
+        },
+        "id": "668f67d0-c64f-4da2-91ee-4446aee7191c"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "stand",
+            "stood",
+            "stood"
+        ],
+        "ru": [
+            "стоять"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/stand.mp3",
+                "https://poliglot16.ru/audio/verbs/stood.mp3",
+                "https://poliglot16.ru/audio/verbs/stood.mp3"
+            ]
+        },
+        "id": "7a62cb83-3e69-4551-8324-c4dcc4ee9b65"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "dream",
+            "dreamt",
+            "dreamt"
+        ],
+        "ru": [
+            "грезить, мечтать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/dream.mp3",
+                "https://poliglot16.ru/audio/verbs/dreamt.mp3",
+                "https://poliglot16.ru/audio/verbs/dreamt.mp3"
+            ]
+        },
+        "id": "2219530a-4052-466f-927b-2fb5748ce30e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "fight",
+            "fought",
+            "fought"
+        ],
+        "ru": [
+            "сражаться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/fight.mp3",
+                "https://poliglot16.ru/audio/verbs/fought.mp3",
+                "https://poliglot16.ru/audio/verbs/fought.mp3"
+            ]
+        },
+        "id": "f7072ef4-97a7-4fe7-911f-f2ac89f1cbda"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "sleep",
+            "slept",
+            "slept"
+        ],
+        "ru": [
+            "спать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/sleep.mp3",
+                "https://poliglot16.ru/audio/verbs/slept.mp3",
+                "https://poliglot16.ru/audio/verbs/slept.mp3"
+            ]
+        },
+        "id": "6ff60f9e-dbab-44a2-8544-95f23dd445bc"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "spend",
+            "spent",
+            "spent"
+        ],
+        "ru": [
+            "тратить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/spend.mp3",
+                "https://poliglot16.ru/audio/verbs/spent.mp3",
+                "https://poliglot16.ru/audio/verbs/spent.mp3"
+            ]
+        },
+        "id": "459a8c56-bccb-4b29-bdf0-dacae9a619c7"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "lose",
+            "lost",
+            "lost"
+        ],
+        "ru": [
+            "терять"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/lose.mp3",
+                "https://poliglot16.ru/audio/verbs/lost.mp3",
+                "https://poliglot16.ru/audio/verbs/lost.mp3"
+            ]
+        },
+        "id": "39d0d00e-b8d1-4524-a33b-731bbb23aa14"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "seek",
+            "sought",
+            "sought"
+        ],
+        "ru": [
+            "искать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/seek.mp3",
+                "https://poliglot16.ru/audio/verbs/sought.mp3",
+                "https://poliglot16.ru/audio/verbs/sought.mp3"
+            ]
+        },
+        "id": "5d7727c0-3080-49bb-b387-39ca10b51ca2"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "stick",
+            "stuck",
+            "stuck"
+        ],
+        "ru": [
+            "уколоть, приклеить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/stick.mp3",
+                "https://poliglot16.ru/audio/verbs/stuck.mp3",
+                "https://poliglot16.ru/audio/verbs/stuck.mp3"
+            ]
+        },
+        "id": "c31646ea-a0bc-45c0-9673-6ccbcf3fbb9a"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "slide",
+            "slid",
+            "slid"
+        ],
+        "ru": [
+            "скользить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/slide.mp3",
+                "https://poliglot16.ru/audio/verbs/slid.mp3",
+                "https://poliglot16.ru/audio/verbs/slid.mp3"
+            ]
+        },
+        "id": "b29235ae-7284-47b5-9c67-49c1d9a8bc86"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "catch",
+            "caught",
+            "caught"
+        ],
+        "ru": [
+            "ловить, поймать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/catch.mp3",
+                "https://poliglot16.ru/audio/verbs/caught.mp3",
+                "https://poliglot16.ru/audio/verbs/caught.mp3"
+            ]
+        },
+        "id": "a4891787-781b-4b85-97ff-6e17d92226da"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "sit",
+            "sat",
+            "sat"
+        ],
+        "ru": [
+            "сидеть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/sit.mp3",
+                "https://poliglot16.ru/audio/verbs/sat.mp3",
+                "https://poliglot16.ru/audio/verbs/sat.mp3"
+            ]
+        },
+        "id": "b9dd8159-5bd4-4827-ac52-02748ac31861"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "teach",
+            "taught",
+            "taught"
+        ],
+        "ru": [
+            "учить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/teach.mp3",
+                "https://poliglot16.ru/audio/verbs/taught.mp3",
+                "https://poliglot16.ru/audio/verbs/taught.mp3"
+            ]
+        },
+        "id": "b7c7f6da-de0a-44a8-b54f-8139db1e9d33"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "strike",
+            "struck",
+            "struck"
+        ],
+        "ru": [
+            "ударить, бить, бастовать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/strike.mp3",
+                "https://poliglot16.ru/audio/verbs/struck.mp3",
+                "https://poliglot16.ru/audio/verbs/struck.mp3"
+            ]
+        },
+        "id": "cecce76b-1606-4447-ad50-f2d24a5bf0fb"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "shoe",
+            "shod",
+            "shod"
+        ],
+        "ru": [
+            "обувать, подковывать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/shoe.mp3",
+                "https://poliglot16.ru/audio/verbs/shod.mp3",
+                "https://poliglot16.ru/audio/verbs/shod.mp3"
+            ]
+        },
+        "id": "27d63df6-5282-44cc-bc4b-fe7e8ee1b12e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "lay",
+            "laid",
+            "laid"
+        ],
+        "ru": [
+            "класть, положить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/lay.mp3",
+                "https://poliglot16.ru/audio/verbs/laid.mp3",
+                "https://poliglot16.ru/audio/verbs/laid.mp3"
+            ]
+        },
+        "id": "379577e3-3bfc-46e5-82e6-302e2ed3aff8"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "burn",
+            "burnt",
+            "burnt"
+        ],
+        "ru": [
+            "жечь, гореть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/burn.mp3",
+                "https://poliglot16.ru/audio/verbs/burnt.mp3",
+                "https://poliglot16.ru/audio/verbs/burnt.mp3"
+            ]
+        },
+        "id": "d6b36135-92d7-4c10-b7dc-e61d80e19699"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "swing",
+            "swung",
+            "swung"
+        ],
+        "ru": [
+            "качаться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/swing.mp3",
+                "https://poliglot16.ru/audio/verbs/swung.mp3",
+                "https://poliglot16.ru/audio/verbs/swung.mp3"
+            ]
+        },
+        "id": "850021db-d425-40bd-8ae3-a898f2c4fc3a"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "shoot",
+            "shot",
+            "shot"
+        ],
+        "ru": [
+            "стрелять, давать побеги"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/shoot.mp3",
+                "https://poliglot16.ru/audio/verbs/shot.mp3",
+                "https://poliglot16.ru/audio/verbs/shot.mp3"
+            ]
+        },
+        "id": "43492c96-75d5-4bb0-9292-0e85f482b1f8"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "spin",
+            "spun",
+            "spun"
+        ],
+        "ru": [
+            "крутиться, вращаться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/spin.mp3",
+                "https://poliglot16.ru/audio/verbs/spun.mp3",
+                "https://poliglot16.ru/audio/verbs/spun.mp3"
+            ]
+        },
+        "id": "b02c055f-e49c-491a-92cf-f534ba32eb45"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "hang",
+            "hung",
+            "hung"
+        ],
+        "ru": [
+            "висеть, повесить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/hang.mp3",
+                "https://poliglot16.ru/audio/verbs/hung.mp3",
+                "https://poliglot16.ru/audio/verbs/hung.mp3"
+            ]
+        },
+        "id": "5dcc3bb3-1503-4e62-80a2-8aab53eb50bf"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "bend",
+            "bent",
+            "bent"
+        ],
+        "ru": [
+            "согнуть(ся)"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/bend.mp3",
+                "https://poliglot16.ru/audio/verbs/bent.mp3",
+                "https://poliglot16.ru/audio/verbs/bent.mp3"
+            ]
+        },
+        "id": "f35f3a4b-f45d-4eb5-bad5-8573444013ae"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "breed",
+            "bred",
+            "bred"
+        ],
+        "ru": [
+            "выращивать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/breed.mp3",
+                "https://poliglot16.ru/audio/verbs/bred.mp3",
+                "https://poliglot16.ru/audio/verbs/bred.mp3"
+            ]
+        },
+        "id": "d0e368ae-3fa0-437c-8348-edc632d3f6c8"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "dig",
+            "dug",
+            "dug"
+        ],
+        "ru": [
+            "копать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/dig.mp3",
+                "https://poliglot16.ru/audio/verbs/dug.mp3",
+                "https://poliglot16.ru/audio/verbs/dug.mp3"
+            ]
+        },
+        "id": "906481c2-3e8e-4e5b-9f7a-41e97733a902"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "bind",
+            "bound",
+            "bound"
+        ],
+        "ru": [
+            "связать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/bind.mp3",
+                "https://poliglot16.ru/audio/verbs/bound.mp3",
+                "https://poliglot16.ru/audio/verbs/bound.mp3"
+            ]
+        },
+        "id": "4e899510-dfb3-408e-b740-8adbe6b61a84"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "smell",
+            "smelt",
+            "smelt"
+        ],
+        "ru": [
+            "пахнуть, нюхать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/smell.mp3",
+                "https://poliglot16.ru/audio/verbs/smelt.mp3",
+                "https://poliglot16.ru/audio/verbs/smelt.mp3"
+            ]
+        },
+        "id": "d78311ba-7ac0-478d-a793-443203ad4846"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "lean",
+            "leant",
+            "leant"
+        ],
+        "ru": [
+            "опереться, прислониться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/lean.mp3",
+                "https://poliglot16.ru/audio/verbs/leant.mp3",
+                "https://poliglot16.ru/audio/verbs/leant.mp3"
+            ]
+        },
+        "id": "9946fb96-5c63-4e66-9ccb-c0f13af1ec6e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "shine",
+            "shone",
+            "shone"
+        ],
+        "ru": [
+            "светить, сиять"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/shine.mp3",
+                "https://poliglot16.ru/audio/verbs/shone.mp3",
+                "https://poliglot16.ru/audio/verbs/shone.mp3"
+            ]
+        },
+        "id": "bbfba085-a41f-44a6-9aa6-3b49fdcf7bc7"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "leap",
+            "leapt",
+            "leapt"
+        ],
+        "ru": [
+            "прыгать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/leap.mp3",
+                "https://poliglot16.ru/audio/verbs/leapt.mp3",
+                "https://poliglot16.ru/audio/verbs/leapt.mp3"
+            ]
+        },
+        "id": "4338e1bf-fb2e-4d3e-bd79-96bd1ca654c1"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "spill",
+            "spilt",
+            "spilt"
+        ],
+        "ru": [
+            "пролить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/spill.mp3",
+                "https://poliglot16.ru/audio/verbs/spilt.mp3",
+                "https://poliglot16.ru/audio/verbs/spilt.mp3"
+            ]
+        },
+        "id": "b311c76c-c752-4f7c-ad1c-a4c095206cb9"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "sweep",
+            "swept",
+            "swept"
+        ],
+        "ru": [
+            "мести, промчаться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/sweep.mp3",
+                "https://poliglot16.ru/audio/verbs/swept.mp3",
+                "https://poliglot16.ru/audio/verbs/swept.mp3"
+            ]
+        },
+        "id": "1c417ddf-3fea-418d-b4e4-f0affd4fbb21"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "lend",
+            "lent",
+            "lent"
+        ],
+        "ru": [
+            "одолжить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/lend.mp3",
+                "https://poliglot16.ru/audio/verbs/lent.mp3",
+                "https://poliglot16.ru/audio/verbs/lent.mp3"
+            ]
+        },
+        "id": "1442a087-291f-4a12-ad86-e3e868045f10"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "sting",
+            "stung",
+            "stung"
+        ],
+        "ru": [
+            "ужалить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/sting.mp3",
+                "https://poliglot16.ru/audio/verbs/stung.mp3",
+                "https://poliglot16.ru/audio/verbs/stung.mp3"
+            ]
+        },
+        "id": "a0f57d81-a920-4283-93b5-aab6865eb8bf"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "grind",
+            "ground",
+            "ground"
+        ],
+        "ru": [
+            "точить, молоть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/grind.mp3",
+                "https://poliglot16.ru/audio/verbs/ground.mp3",
+                "https://poliglot16.ru/audio/verbs/ground.mp3"
+            ]
+        },
+        "id": "217c040a-2336-45df-a2d5-7ceb4760b4d8"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "wring",
+            "wrung",
+            "wrung"
+        ],
+        "ru": [
+            "скрутить, сжать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/wring.mp3",
+                "https://poliglot16.ru/audio/verbs/wrung.mp3",
+                "https://poliglot16.ru/audio/verbs/wrung.mp3"
+            ]
+        },
+        "id": "b6f1a7e4-1021-4d22-96bc-35f741240e69"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "spit",
+            "spat",
+            "spat"
+        ],
+        "ru": [
+            "плевать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/spit.mp3",
+                "https://poliglot16.ru/audio/verbs/spat.mp3",
+                "https://poliglot16.ru/audio/verbs/spat.mp3"
+            ]
+        },
+        "id": "708831a2-fc57-4914-a0ab-4a6a4574926b"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "dwell",
+            "dwelt",
+            "dwelt"
+        ],
+        "ru": [
+            "обитать, задерживаться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/dwell.mp3",
+                "https://poliglot16.ru/audio/verbs/dwelt.mp3",
+                "https://poliglot16.ru/audio/verbs/dwelt.mp3"
+            ]
+        },
+        "id": "0f3d723a-5ba3-4771-ac6c-e813ef3c810f"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "bleed",
+            "bled",
+            "bled"
+        ],
+        "ru": [
+            "кровоточить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/bleed.mp3",
+                "https://poliglot16.ru/audio/verbs/bled.mp3",
+                "https://poliglot16.ru/audio/verbs/bled.mp3"
+            ]
+        },
+        "id": "3d76b54d-ed42-484b-b26a-36d7034f5c68"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "creep",
+            "crept",
+            "crept"
+        ],
+        "ru": [
+            "ползти"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/creep.mp3",
+                "https://poliglot16.ru/audio/verbs/crept.mp3",
+                "https://poliglot16.ru/audio/verbs/crept.mp3"
+            ]
+        },
+        "id": "3499aa97-ec3a-4593-aa0a-cce700811cc0"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "flee",
+            "fled",
+            "fled"
+        ],
+        "ru": [
+            "бежать, спасаться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/flee.mp3",
+                "https://poliglot16.ru/audio/verbs/fled.mp3",
+                "https://poliglot16.ru/audio/verbs/fled.mp3"
+            ]
+        },
+        "id": "b3b53b6a-f258-4a15-8535-353f7ddbab63"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "sling",
+            "slung",
+            "slung"
+        ],
+        "ru": [
+            "швырять, подвешивать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/sling.mp3",
+                "https://poliglot16.ru/audio/verbs/slung.mp3",
+                "https://poliglot16.ru/audio/verbs/slung.mp3"
+            ]
+        },
+        "id": "74290a8c-5fca-4471-82c6-5dca50ef772f"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "fling",
+            "flung",
+            "flung"
+        ],
+        "ru": [
+            "бросить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/fling.mp3",
+                "https://poliglot16.ru/audio/verbs/flung.mp3",
+                "https://poliglot16.ru/audio/verbs/flung.mp3"
+            ]
+        },
+        "id": "79500423-e2d7-4b55-b942-3dc145617bad"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "gainsay",
+            "gainsaid",
+            "gainsaid"
+        ],
+        "ru": [
+            "отрицать, противоречить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/gainsay.mp3",
+                "https://poliglot16.ru/audio/verbs/gainsaid.mp3",
+                "https://poliglot16.ru/audio/verbs/gainsaid.mp3"
+            ]
+        },
+        "id": "7fdcb271-7dd6-4cae-bc5f-7c449f736337"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "heave",
+            "heaved",
+            "heaved, hove"
+        ],
+        "ru": [
+            "подымать(ся), подъём"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/heave.mp3",
+                "https://poliglot16.ru/audio/verbs/heaved.mp3",
+                "https://poliglot16.ru/audio/verbs/heaved, hove.mp3"
+            ]
+        },
+        "id": "413b324d-2972-4a40-8bbd-85d880a25cb0"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "rend",
+            "rent",
+            "rent"
+        ],
+        "ru": [
+            "раздирать, отдирать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/rend.mp3",
+                "https://poliglot16.ru/audio/verbs/rent.mp3",
+                "https://poliglot16.ru/audio/verbs/rent.mp3"
+            ]
+        },
+        "id": "96d401cd-355d-4f0e-9eff-49e471e7dd2a"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "slink",
+            "slunk",
+            "slunk"
+        ],
+        "ru": [
+            "идти крадучись"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/slink.mp3",
+                "https://poliglot16.ru/audio/verbs/slunk.mp3",
+                "https://poliglot16.ru/audio/verbs/slunk.mp3"
+            ]
+        },
+        "id": "5886b667-726b-402c-9c61-f7d96bc98a2f"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "spoil",
+            "spoilt",
+            "spoilt"
+        ],
+        "ru": [
+            "портить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/spoil.mp3",
+                "https://poliglot16.ru/audio/verbs/spoilt.mp3",
+                "https://poliglot16.ru/audio/verbs/spoilt.mp3"
+            ]
+        },
+        "id": "c6bcaac7-410a-434b-9c6c-e600fb2c0f8e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "weep",
+            "wept",
+            "wept"
+        ],
+        "ru": [
+            "плакать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/weep.mp3",
+                "https://poliglot16.ru/audio/verbs/wept.mp3",
+                "https://poliglot16.ru/audio/verbs/wept.mp3"
+            ]
+        },
+        "id": "2d8f395c-9be8-4035-b47f-348ca43d4071"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "come",
+            "came",
+            "come"
+        ],
+        "ru": [
+            "прийти"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/come.mp3",
+                "https://poliglot16.ru/audio/verbs/came.mp3",
+                "https://poliglot16.ru/audio/verbs/come.mp3"
+            ]
+        },
+        "id": "38afd34e-7ef5-4389-bb26-28953bc57294"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "become",
+            "became",
+            "become"
+        ],
+        "ru": [
+            "стать, сделаться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/become.mp3",
+                "https://poliglot16.ru/audio/verbs/became.mp3",
+                "https://poliglot16.ru/audio/verbs/become.mp3"
+            ]
+        },
+        "id": "393540ae-72b5-408c-ae0e-c71ac1b54073"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "run",
+            "ran",
+            "run"
+        ],
+        "ru": [
+            "бежать, течь"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/run.mp3",
+                "https://poliglot16.ru/audio/verbs/ran.mp3",
+                "https://poliglot16.ru/audio/verbs/run.mp3"
+            ]
+        },
+        "id": "bbef80a2-1d0a-47a3-8d32-49dcaf4ba257"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "spell",
+            "spelt",
+            "spelt"
+        ],
+        "ru": [
+            "писать или читать по буквам"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/spell.mp3",
+                "https://poliglot16.ru/audio/verbs/spelt.mp3",
+                "https://poliglot16.ru/audio/verbs/spelt.mp3"
+            ]
+        },
+        "id": "4ffed1f9-374d-4e2f-9277-80c4d59bc245"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "see",
+            "saw",
+            "seen"
+        ],
+        "ru": [
+            "видеть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/see.mp3",
+                "https://poliglot16.ru/audio/verbs/saw.mp3",
+                "https://poliglot16.ru/audio/verbs/seen.mp3"
+            ]
+        },
+        "id": "c9106f56-f457-4417-ac32-e023d9fde15a"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "take",
+            "took",
+            "taken"
+        ],
+        "ru": [
+            "взять, брать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/take.mp3",
+                "https://poliglot16.ru/audio/verbs/took.mp3",
+                "https://poliglot16.ru/audio/verbs/taken.mp3"
+            ]
+        },
+        "id": "5228b4e0-8a27-40a7-8b11-274f15a6a752"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "give",
+            "gave",
+            "given"
+        ],
+        "ru": [
+            "дать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/give.mp3",
+                "https://poliglot16.ru/audio/verbs/gave.mp3",
+                "https://poliglot16.ru/audio/verbs/given.mp3"
+            ]
+        },
+        "id": "ccb8ba26-2905-418b-acba-e0c059a527b0"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "write",
+            "wrote",
+            "written"
+        ],
+        "ru": [
+            "писать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/write.mp3",
+                "https://poliglot16.ru/audio/verbs/wrote.mp3",
+                "https://poliglot16.ru/audio/verbs/written.mp3"
+            ]
+        },
+        "id": "e413ff19-a364-4716-bfbb-787c6855b78e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "drive",
+            "drove",
+            "driven"
+        ],
+        "ru": [
+            "гнать, ехать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/drive.mp3",
+                "https://poliglot16.ru/audio/verbs/drove.mp3",
+                "https://poliglot16.ru/audio/verbs/driven.mp3"
+            ]
+        },
+        "id": "95390862-cb7e-4936-90fc-d628de851514"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "choose",
+            "chose",
+            "chosen"
+        ],
+        "ru": [
+            "выбрать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/choose.mp3",
+                "https://poliglot16.ru/audio/verbs/chose.mp3",
+                "https://poliglot16.ru/audio/verbs/chosen.mp3"
+            ]
+        },
+        "id": "fe5b2d5b-d268-4666-9b40-8984b91f40fc"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "fall",
+            "fell",
+            "fallen"
+        ],
+        "ru": [
+            "падать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/fall.mp3",
+                "https://poliglot16.ru/audio/verbs/fell.mp3",
+                "https://poliglot16.ru/audio/verbs/fallen.mp3"
+            ]
+        },
+        "id": "afd64e76-1f5d-4c21-9a3f-ad28be4f1db7"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "break",
+            "broke",
+            "broken"
+        ],
+        "ru": [
+            "(с)ломать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/break.mp3",
+                "https://poliglot16.ru/audio/verbs/broke.mp3",
+                "https://poliglot16.ru/audio/verbs/broken.mp3"
+            ]
+        },
+        "id": "a90861c6-675a-45a8-81a0-d90f8e7dd025"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "speak",
+            "spoke",
+            "spoken"
+        ],
+        "ru": [
+            "говорить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/speak.mp3",
+                "https://poliglot16.ru/audio/verbs/spoke.mp3",
+                "https://poliglot16.ru/audio/verbs/spoken.mp3"
+            ]
+        },
+        "id": "a700d01c-bf32-4a18-be3c-f9b885bd6878"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "rise",
+            "rose",
+            "risen"
+        ],
+        "ru": [
+            "подняться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/rise.mp3",
+                "https://poliglot16.ru/audio/verbs/rose.mp3",
+                "https://poliglot16.ru/audio/verbs/risen.mp3"
+            ]
+        },
+        "id": "013f681c-2bac-417f-a86e-25208b043b9d"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "eat",
+            "ate",
+            "eaten"
+        ],
+        "ru": [
+            "кушать, есть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/eat.mp3",
+                "https://poliglot16.ru/audio/verbs/ate.mp3",
+                "https://poliglot16.ru/audio/verbs/eaten.mp3"
+            ]
+        },
+        "id": "de26feb9-4cc6-4598-a39c-febebbb2a4db"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "beat",
+            "beat",
+            "beaten"
+        ],
+        "ru": [
+            "бить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/beat.mp3",
+                "https://poliglot16.ru/audio/verbs/beat.mp3",
+                "https://poliglot16.ru/audio/verbs/beaten.mp3"
+            ]
+        },
+        "id": "c8fc26c6-3049-4cc8-b554-88a8fbdaf6cb"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "hide",
+            "hid",
+            "hidden"
+        ],
+        "ru": [
+            "прятать(ся)"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/hide.mp3",
+                "https://poliglot16.ru/audio/verbs/hid.mp3",
+                "https://poliglot16.ru/audio/verbs/hidden.mp3"
+            ]
+        },
+        "id": "b1cb9d29-6bdc-42db-9ad0-2a5b0399ef7a"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "ride",
+            "rode",
+            "ridden"
+        ],
+        "ru": [
+            "ездить верхом"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/ride.mp3",
+                "https://poliglot16.ru/audio/verbs/rode.mp3",
+                "https://poliglot16.ru/audio/verbs/ridden.mp3"
+            ]
+        },
+        "id": "70295296-bb62-4adb-a90e-6fa5ac8cfb87"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "forget",
+            "forgot",
+            "forgotten"
+        ],
+        "ru": [
+            "забыть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/forget.mp3",
+                "https://poliglot16.ru/audio/verbs/forgot.mp3",
+                "https://poliglot16.ru/audio/verbs/forgotten.mp3"
+            ]
+        },
+        "id": "1304c02b-3d56-4ce0-83be-b6e22402c94c"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "wake",
+            "woke",
+            "woken"
+        ],
+        "ru": [
+            "просыпаться, будить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/wake.mp3",
+                "https://poliglot16.ru/audio/verbs/woke.mp3",
+                "https://poliglot16.ru/audio/verbs/woken.mp3"
+            ]
+        },
+        "id": "7b0cafbc-5539-4113-8f8a-039aa4c2dbe7"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "arise",
+            "arose",
+            "arisen"
+        ],
+        "ru": [
+            "подняться, возникнуть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/arise.mp3",
+                "https://poliglot16.ru/audio/verbs/arose.mp3",
+                "https://poliglot16.ru/audio/verbs/arisen.mp3"
+            ]
+        },
+        "id": "ffd1748e-6d3c-4009-a20b-e0eb2f223783"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "shake",
+            "shook",
+            "shaken"
+        ],
+        "ru": [
+            "трясти"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/shake.mp3",
+                "https://poliglot16.ru/audio/verbs/shook.mp3",
+                "https://poliglot16.ru/audio/verbs/shaken.mp3"
+            ]
+        },
+        "id": "524093f4-f35b-458a-8520-9cd60831eb88"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "steal",
+            "stole",
+            "stolen"
+        ],
+        "ru": [
+            "украсть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/steal.mp3",
+                "https://poliglot16.ru/audio/verbs/stole.mp3",
+                "https://poliglot16.ru/audio/verbs/stolen.mp3"
+            ]
+        },
+        "id": "c2975427-e4ef-4bff-ac63-0023a4643b9e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "bite",
+            "bit",
+            "bitten"
+        ],
+        "ru": [
+            "кусать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/bite.mp3",
+                "https://poliglot16.ru/audio/verbs/bit.mp3",
+                "https://poliglot16.ru/audio/verbs/bitten.mp3"
+            ]
+        },
+        "id": "55fcf744-465d-4878-9922-00f09881be2e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "freeze",
+            "froze",
+            "frozen"
+        ],
+        "ru": [
+            "замерзнуть, замораживать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/freeze.mp3",
+                "https://poliglot16.ru/audio/verbs/froze.mp3",
+                "https://poliglot16.ru/audio/verbs/frozen.mp3"
+            ]
+        },
+        "id": "564555ac-dd82-468c-a7d1-72a5ab2a39f2"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "strive",
+            "strove",
+            "striven"
+        ],
+        "ru": [
+            "стараться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/strive.mp3",
+                "https://poliglot16.ru/audio/verbs/strove.mp3",
+                "https://poliglot16.ru/audio/verbs/striven.mp3"
+            ]
+        },
+        "id": "50b89f9e-ed58-4876-8ccb-dca714d6a47d"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "forgive",
+            "forgave",
+            "forgiven"
+        ],
+        "ru": [
+            "простить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/forgive.mp3",
+                "https://poliglot16.ru/audio/verbs/forgave.mp3",
+                "https://poliglot16.ru/audio/verbs/forgiven.mp3"
+            ]
+        },
+        "id": "4abe4712-e3ba-4126-b056-946952768bb5"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "awake",
+            "awoke",
+            "awoken"
+        ],
+        "ru": [
+            "будить, проснуться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/awake.mp3",
+                "https://poliglot16.ru/audio/verbs/awoke.mp3",
+                "https://poliglot16.ru/audio/verbs/awoken.mp3"
+            ]
+        },
+        "id": "87f6fedd-0219-440c-8f91-5084d45b9bf4"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "swell",
+            "swelled",
+            "swollen"
+        ],
+        "ru": [
+            "вздуться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/swell.mp3",
+                "https://poliglot16.ru/audio/verbs/swelled.mp3",
+                "https://poliglot16.ru/audio/verbs/swollen.mp3"
+            ]
+        },
+        "id": "3362f890-abce-4de7-98db-51bb49b0de67"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "forbid",
+            "forbade",
+            "forbidden"
+        ],
+        "ru": [
+            "запретить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/forbid.mp3",
+                "https://poliglot16.ru/audio/verbs/forbade.mp3",
+                "https://poliglot16.ru/audio/verbs/forbidden.mp3"
+            ]
+        },
+        "id": "5172c847-ee4c-47fc-af28-23ee71ca122f"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "weave",
+            "wove",
+            "woven"
+        ],
+        "ru": [
+            "ткать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/weave.mp3",
+                "https://poliglot16.ru/audio/verbs/wove.mp3",
+                "https://poliglot16.ru/audio/verbs/woven.mp3"
+            ]
+        },
+        "id": "e7b5c052-a683-4f30-9073-eca61483adf2"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "thrive",
+            "throve",
+            "thriven"
+        ],
+        "ru": [
+            "процветать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/thrive.mp3",
+                "https://poliglot16.ru/audio/verbs/throve.mp3",
+                "https://poliglot16.ru/audio/verbs/thriven.mp3"
+            ]
+        },
+        "id": "0223f3ab-df1f-433c-bb0b-b06d13e7f9ef"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "sew",
+            "sewed",
+            "sewn"
+        ],
+        "ru": [
+            "шить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/sew.mp3",
+                "https://poliglot16.ru/audio/verbs/sewed.mp3",
+                "https://poliglot16.ru/audio/verbs/sewn.mp3"
+            ]
+        },
+        "id": "a5caeba7-dbd1-4eaa-8900-33b2ac9fb319"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "tread",
+            "trod",
+            "trodden"
+        ],
+        "ru": [
+            "ступать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/tread.mp3",
+                "https://poliglot16.ru/audio/verbs/trod.mp3",
+                "https://poliglot16.ru/audio/verbs/trodden.mp3"
+            ]
+        },
+        "id": "f90598f5-905e-42d3-8828-14dee6c6cbe5"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "know",
+            "knew",
+            "known"
+        ],
+        "ru": [
+            "знать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/know.mp3",
+                "https://poliglot16.ru/audio/verbs/knew.mp3",
+                "https://poliglot16.ru/audio/verbs/known.mp3"
+            ]
+        },
+        "id": "93f4c18c-abc2-4b1e-be02-bdcdbd840a4e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "show",
+            "showed",
+            "shown"
+        ],
+        "ru": [
+            "показывать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/show.mp3",
+                "https://poliglot16.ru/audio/verbs/showed.mp3",
+                "https://poliglot16.ru/audio/verbs/shown.mp3"
+            ]
+        },
+        "id": "aff0fde9-27a0-44cd-8902-69627505f19d"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "saw",
+            "sawed",
+            "sawn"
+        ],
+        "ru": [
+            "пилить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/saw.mp3",
+                "https://poliglot16.ru/audio/verbs/sawed.mp3",
+                "https://poliglot16.ru/audio/verbs/sawn.mp3"
+            ]
+        },
+        "id": "2f12cd39-95a0-4335-b69f-0c9990189991"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "blow",
+            "blew",
+            "blown"
+        ],
+        "ru": [
+            "дуть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/blow.mp3",
+                "https://poliglot16.ru/audio/verbs/blew.mp3",
+                "https://poliglot16.ru/audio/verbs/blown.mp3"
+            ]
+        },
+        "id": "d927e57e-34a4-4b05-a4fa-91a4b9472e4a"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "fly",
+            "flew",
+            "flown"
+        ],
+        "ru": [
+            "летать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/fly.mp3",
+                "https://poliglot16.ru/audio/verbs/flew.mp3",
+                "https://poliglot16.ru/audio/verbs/flown.mp3"
+            ]
+        },
+        "id": "28b2d1e9-48e9-4be2-835e-fd12b1b7722c"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "grow",
+            "grew",
+            "grown"
+        ],
+        "ru": [
+            "расти"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/grow.mp3",
+                "https://poliglot16.ru/audio/verbs/grew.mp3",
+                "https://poliglot16.ru/audio/verbs/grown.mp3"
+            ]
+        },
+        "id": "7ac9147e-da4f-46dd-b6e6-3c1d5bc93299"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "draw",
+            "drew",
+            "drawn"
+        ],
+        "ru": [
+            "тащить, рисовать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/draw.mp3",
+                "https://poliglot16.ru/audio/verbs/drew.mp3",
+                "https://poliglot16.ru/audio/verbs/drawn.mp3"
+            ]
+        },
+        "id": "780e0481-dc75-492f-a642-45dd6d45f85e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "throw",
+            "threw",
+            "thrown"
+        ],
+        "ru": [
+            "бросить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/throw.mp3",
+                "https://poliglot16.ru/audio/verbs/threw.mp3",
+                "https://poliglot16.ru/audio/verbs/thrown.mp3"
+            ]
+        },
+        "id": "c3b5d9f0-1f33-4a0b-b3ac-80bc9b1d7ff8"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "be",
+            "was, were",
+            "been"
+        ],
+        "ru": [
+            "быть, являться"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/be.mp3",
+                "https://poliglot16.ru/audio/verbs/was, were.mp3",
+                "https://poliglot16.ru/audio/verbs/been.mp3"
+            ]
+        },
+        "id": "f116bcee-6c34-4f72-863e-80cbd37f3a90"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "do",
+            "did",
+            "done"
+        ],
+        "ru": [
+            "делать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/do.mp3",
+                "https://poliglot16.ru/audio/verbs/did.mp3",
+                "https://poliglot16.ru/audio/verbs/done.mp3"
+            ]
+        },
+        "id": "6e0a9704-4c18-4cf5-8215-ac661d949482"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "go",
+            "went",
+            "gone"
+        ],
+        "ru": [
+            "идти, уходить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/go.mp3",
+                "https://poliglot16.ru/audio/verbs/went.mp3",
+                "https://poliglot16.ru/audio/verbs/gone.mp3"
+            ]
+        },
+        "id": "08291d7c-4695-4a6c-948e-051357fd4ea5"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "spring",
+            "sprang",
+            "sprung"
+        ],
+        "ru": [
+            "вскочить, возникнуть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/spring.mp3",
+                "https://poliglot16.ru/audio/verbs/sprang.mp3",
+                "https://poliglot16.ru/audio/verbs/sprung.mp3"
+            ]
+        },
+        "id": "dd14ba5a-5a78-4421-8e94-1525aaceec4e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "ring",
+            "rang",
+            "rung"
+        ],
+        "ru": [
+            "звонить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/ring.mp3",
+                "https://poliglot16.ru/audio/verbs/rang.mp3",
+                "https://poliglot16.ru/audio/verbs/rung.mp3"
+            ]
+        },
+        "id": "b1259d53-54ac-4edc-8211-416c7be037eb"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "begin",
+            "began",
+            "begun"
+        ],
+        "ru": [
+            "начать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/begin.mp3",
+                "https://poliglot16.ru/audio/verbs/began.mp3",
+                "https://poliglot16.ru/audio/verbs/begun.mp3"
+            ]
+        },
+        "id": "964f2a79-2449-4882-a902-a6fd589f31fe"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "bear",
+            "bore",
+            "born"
+        ],
+        "ru": [
+            "родить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/bear.mp3",
+                "https://poliglot16.ru/audio/verbs/bore.mp3",
+                "https://poliglot16.ru/audio/verbs/born.mp3"
+            ]
+        },
+        "id": "f9f0e767-13d0-451e-b7c7-fd89da8b9852"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "wear",
+            "wore",
+            "worn"
+        ],
+        "ru": [
+            "носить(одежду)"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/wear.mp3",
+                "https://poliglot16.ru/audio/verbs/wore.mp3",
+                "https://poliglot16.ru/audio/verbs/worn.mp3"
+            ]
+        },
+        "id": "59de7875-26d8-4c22-b5cd-6f1718c06a99"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "drink",
+            "drank",
+            "drunk"
+        ],
+        "ru": [
+            "пить, выпить"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/drink.mp3",
+                "https://poliglot16.ru/audio/verbs/drank.mp3",
+                "https://poliglot16.ru/audio/verbs/drunk.mp3"
+            ]
+        },
+        "id": "584bd1dc-d446-4523-9f08-3b6cfa646134"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "lie",
+            "lay",
+            "lain"
+        ],
+        "ru": [
+            "лежать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/lie.mp3",
+                "https://poliglot16.ru/audio/verbs/lay.mp3",
+                "https://poliglot16.ru/audio/verbs/lain.mp3"
+            ]
+        },
+        "id": "7d9c1772-32d7-4b67-a6d3-05c84ce084eb"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "sing",
+            "sang",
+            "sung"
+        ],
+        "ru": [
+            "петь"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/sing.mp3",
+                "https://poliglot16.ru/audio/verbs/sang.mp3",
+                "https://poliglot16.ru/audio/verbs/sung.mp3"
+            ]
+        },
+        "id": "b8b76724-0f19-42a1-bc3c-db333ce3777a"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "swim",
+            "swam",
+            "swum"
+        ],
+        "ru": [
+            "плыть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/swim.mp3",
+                "https://poliglot16.ru/audio/verbs/swam.mp3",
+                "https://poliglot16.ru/audio/verbs/swum.mp3"
+            ]
+        },
+        "id": "ee5b5dbf-ebcd-48a1-846a-d08278f020b5"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "sink",
+            "sank",
+            "sunk"
+        ],
+        "ru": [
+            "опускаться, погружаться, тонуть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/sink.mp3",
+                "https://poliglot16.ru/audio/verbs/sank.mp3",
+                "https://poliglot16.ru/audio/verbs/sunk.mp3"
+            ]
+        },
+        "id": "a0dfb816-d42e-410b-8f2c-b486d8b479fa"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "tear",
+            "tore",
+            "torn"
+        ],
+        "ru": [
+            "рвать"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/tear.mp3",
+                "https://poliglot16.ru/audio/verbs/tore.mp3",
+                "https://poliglot16.ru/audio/verbs/torn.mp3"
+            ]
+        },
+        "id": "8a728ca6-49e7-4d3c-9bdd-7e8d0a814b9a"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "bless",
+            "blessed",
+            "blest"
+        ],
+        "ru": [
+            "благословлять"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/bless.mp3",
+                "https://poliglot16.ru/audio/verbs/blessed.mp3",
+                "https://poliglot16.ru/audio/verbs/blest.mp3"
+            ]
+        },
+        "id": "d04ef9c6-8814-4800-b692-edf367ced14d"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "shrink",
+            "shrank",
+            "shrunk"
+        ],
+        "ru": [
+            "сокращаться, сжиматься, отпрянуть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/shrink.mp3",
+                "https://poliglot16.ru/audio/verbs/shrank.mp3",
+                "https://poliglot16.ru/audio/verbs/shrunk.mp3"
+            ]
+        },
+        "id": "7304eaa1-bc3d-43ef-aee7-6ad97bf5712e"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "swear",
+            "swore",
+            "sworn"
+        ],
+        "ru": [
+            "(по)клясться, присягнуть"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/swear.mp3",
+                "https://poliglot16.ru/audio/verbs/swore.mp3",
+                "https://poliglot16.ru/audio/verbs/sworn.mp3"
+            ]
+        },
+        "id": "dec8d0dd-e5ea-432b-a10a-7ec501cff06b"
+    },
+    {
+        "break": false,
+        "tags": [],
+        "countErrors": 0,
+        "countRepeat": 0,
+        "countSuccess": 0,
+        "en": [
+            "stink",
+            "stank",
+            "stunk"
+        ],
+        "ru": [
+            "вонять"
+        ],
+        "audio": {
+            "en": [
+                "https://poliglot16.ru/audio/verbs/stink.mp3",
+                "https://poliglot16.ru/audio/verbs/stank.mp3",
+                "https://poliglot16.ru/audio/verbs/stunk.mp3"
+            ]
+        },
+        "id": "24589671-66da-4b16-9c20-addd490d4b73"
+    }
+]

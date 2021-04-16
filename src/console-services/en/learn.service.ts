@@ -9,6 +9,12 @@ import { IChoices, TDirection } from './types';
 
 const promt = inquirer.createPromptModule();
 
+const spawn = require('child_process').exec;
+
+function runService(workerData) {
+  spawn(`node ./test.js ${workerData}`);
+}
+
 enum Action {
   addLearnModelToCollection = 'add_learn_model_to_collection',
   removeLearnModelCollection = 'remove_learn_model_collection',
@@ -106,6 +112,10 @@ export class LearnService {
     learnModel = learnModel || collection.selectRandomLearnModel();
     const answerResult = await this.showQuestion(learnModel);
     if (typeof answerResult === 'boolean') {
+      runService(`https://poliglot16.ru/audio/verbs/${learnModel.en[0]}.mp3`);
+      setTimeout(() => {
+        runService(`https://poliglot16.ru/audio/verbs/${learnModel.en[1]}.mp3`);
+      }, 1000)
       if (answerResult) {
         collection.upSuccess(learnModel);
         collection.upRepeat(learnModel);
@@ -218,7 +228,11 @@ export class LearnService {
   }
 
   private async showQuestion(learnModel: LearnModel): Promise<boolean|Action> {
-    const answer = await this.practicMode.ask(this.direction, learnModel);
+    const answer = await this.practicMode.ask(
+      this.direction,
+      learnModel,
+      this.learnCollection.items
+    );
     const action = await this.action(answer);
     if (action === Action.goBack) {
       return await this.showQuestion(learnModel);

@@ -19,7 +19,7 @@ export class En2Service {
       console.log(`Уже есть ${en}`);
       return;
     }
-    collection.addModel({ en: [en], ru: [ru] });
+    collection.addModel({ en: en.split(','), ru: ru.split(',') });
   }
 
   @Command({
