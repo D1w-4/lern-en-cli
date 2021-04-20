@@ -1,4 +1,7 @@
 import * as inquirer from 'inquirer';
+import { DataAdapter } from './adapters/data.adapter';
+import { FirebaseAdapter } from './adapters/firebase.adapter';
+import { JsonFileAdapter } from './adapters/json-file.adapter';
 import { LearnCollection } from './models/learn.collection';
 import { LearnModel } from './models/learn.model';
 import { AbstractPracticMode } from './practic-mode/abstractPracticMode';
@@ -6,9 +9,11 @@ import { ChoicePMService } from './practic-mode/choicePM.service';
 import { InputAndTranslatePMService } from './practic-mode/inputAndTranslatePM.service';
 import { InputPMService } from './practic-mode/inputPM.service';
 import { IChoices, TDirection } from './types';
+import * as fs from 'fs';
+import * as path from 'path';
 
 const promt = inquirer.createPromptModule();
-
+promt.registerPrompt('filePath', require('inquirer-file-path'));
 const spawn = require('child_process').exec;
 
 function runService(workerData) {
@@ -24,19 +29,18 @@ enum Action {
 }
 
 export class LearnService {
+  dataAdapterList: Array<any> = [
+    new JsonFileAdapter(),
+    new FirebaseAdapter(),
+  ];
   direction: TDirection;
-  learnCollection: LearnCollection;
+  learnCollection: LearnCollection<unknown>;
   practicMode: AbstractPracticMode;
-
   practicModeList: Array<AbstractPracticMode> = [
     new InputPMService(),
     new InputAndTranslatePMService(),
     new ChoicePMService(),
   ];
-
-  constructor(filePath: string) {
-    this.learnCollection = new LearnCollection(filePath);
-  }
 
   private async action(answer): Promise<Action> {
     if (!['[', '~'].includes(answer)) {
@@ -115,7 +119,7 @@ export class LearnService {
       runService(`https://poliglot16.ru/audio/verbs/${learnModel.en[0]}.mp3`);
       setTimeout(() => {
         runService(`https://poliglot16.ru/audio/verbs/${learnModel.en[1]}.mp3`);
-      }, 1000)
+      }, 1000);
       if (answerResult) {
         collection.upSuccess(learnModel);
         collection.upRepeat(learnModel);
@@ -231,7 +235,7 @@ export class LearnService {
     const answer = await this.practicMode.ask(
       this.direction,
       learnModel,
-      this.learnCollection.items
+      this.learnCollection.items,
     );
     const action = await this.action(answer);
     if (action === Action.goBack) {
@@ -243,7 +247,82 @@ export class LearnService {
     return this.practicMode.checkAnswer(this.direction, learnModel, answer);
   }
 
+  async addWord(
+    learnCollection?: LearnCollection<LearnModel>,
+  ): Promise<void> {
+    if (!learnCollection) {
+      const adapter = await this.choiceAdapter();
+      learnCollection = new LearnCollection(adapter);
+      await learnCollection.init();
+    }
+
+    const {en} = await promt({
+      type: 'input',
+      name: 'en',
+      message: 'en',
+    });
+
+    const {ru} = await promt({
+      type: 'input',
+      name: 'ru',
+      message: 'ru',
+    });
+
+    await learnCollection.addModel({
+      en: en.split(',').map(s => s.trim()),
+      ru: ru.split(',').map(s => s.trim())
+    });
+    await this.addWord(learnCollection);
+  }
+
+  async choiceAdapter(): Promise<DataAdapter> {
+    const choiseList = this.dataAdapterList.map((adapter) => {
+      return {
+        name: adapter.name,
+        value: adapter,
+      };
+    });
+    const { adapter } = await promt({
+      type: 'list',
+      name: 'adapter',
+      choices: choiseList,
+      message: 'Где хранить слова?',
+    });
+
+    if (adapter instanceof JsonFileAdapter) {
+      const { filePath } = await promt({
+        type: 'filePath',
+        name: 'filePath',
+        message: 'Выбери файл .json',
+        basePath: './',
+      });
+
+      adapter.init({ filePath, items: [] });
+    }
+
+    if (adapter instanceof FirebaseAdapter) {
+      let filePath = path.resolve(process.cwd(), 'firebase.config.json');
+      if (!fs.existsSync(filePath)) {
+        const { choicePath } = await promt({
+          type: 'filePath',
+          name: 'choicePath',
+          message: 'Выбери конфиг файл firebase .json',
+          basePath: './',
+        });
+        filePath = choicePath;
+      }
+
+      adapter.init({ filePath });
+    }
+    return adapter;
+  }
+
   async run(): Promise<void> {
+    const adapter = await this.choiceAdapter();
+
+    this.learnCollection = new LearnCollection(adapter);
+    await this.learnCollection.init();
+
     const collection = this.learnCollection;
     collection.setActiveTag(
       await this.choiceTag(),

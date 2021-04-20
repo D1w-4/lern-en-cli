@@ -1,6 +1,5 @@
 import { Command, Console } from 'nestjs-console';
 import { LearnService } from './learn.service';
-import { LearnCollection } from './models/learn.collection';
 
 // yarn console:dev en learn ./book.json
 @Console({
@@ -9,25 +8,22 @@ import { LearnCollection } from './models/learn.collection';
 })
 export class En2Service {
   @Command({
-    command: 'add <filePath> <en> <ru>',
+    command: 'add',
     description: 'добавить слово',
   })
-  add(filePath, en, ru): void {
-    const collection = new LearnCollection(filePath);
-    const isset = collection.items.some((s) => s.en.includes(en));
-    if (isset) {
-      console.log(`Уже есть ${en}`);
-      return;
-    }
-    collection.addModel({ en: en.split(','), ru: ru.split(',') });
+  async add(): Promise<void> {
+    const learnService = new LearnService();
+
+    await learnService.addWord();
   }
 
   @Command({
-    command: 'learn <filePath>',
+    command: 'learn',
     description: '',
   })
-  async learn(filePath: string) {
-    const learnService = new LearnService(filePath);
+  async learn() {
+    const learnService = new LearnService();
     await learnService.run();
   }
 }
+

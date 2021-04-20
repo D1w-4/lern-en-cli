@@ -1,0 +1,20 @@
+[
+    {
+        "break": false,
+        "tags": [
+            "one",
+            "two"
+        ],
+        "countErrors": 24,
+        "countRepeat": 46,
+        "countSuccess": 22,
+        "en": [
+            "teach",
+            "taught"
+        ],
+        "ru": [
+            "учить"
+        ],
+        "id": "1aeaf26b-3591-4b9c-af15-5c2820af60dc"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "break": false,
+        "tags": [
+            "пятница"
+        ],
+        "countErrors": 1,
+        "countRepeat": 5,
+        "countSuccess": 4,
+        "en": [
+            "shake"
+        ],
+        "ru": [
+            "взбивать"
+        ],
+        "countLerning": 0,
+        "phonetics": "",
+        "rating": 0,
+        "repeat": 0,
+        "id": "6a8e281c-65b2-4855-a857-3954efeea3c7"
+    }
+]
