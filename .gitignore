@@ -4,7 +4,7 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 ./config.json
-./cli-lern.config.json
+firebase.config.json
 # User-specific stuff:
 .idea/**/workspace.xml
 .idea/**/tasks.xml
@@ -394,3 +394,4 @@ docker-compose.yml
 dist
 
 src/console-services/config/config.json
+/firebase.config.json

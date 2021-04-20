@@ -12,12 +12,13 @@ import { IChoices, TDirection } from './types';
 import * as fs from 'fs';
 import * as path from 'path';
 
+const soundWords = require('./ultimate.json');
 const promt = inquirer.createPromptModule();
 promt.registerPrompt('filePath', require('inquirer-file-path'));
 const spawn = require('child_process').exec;
 
-function runService(workerData) {
-  spawn(`node ./test.js ${workerData}`);
+function runService(workerData: Array<string>) {
+  spawn(`node ./test.js -- ${workerData.join(' ')}`);
 }
 
 enum Action {
@@ -111,15 +112,19 @@ export class LearnService {
   }
 
   private async loopLearn(learnModel?: LearnModel): Promise<void> {
-    console.clear();
+    // console.clear();
     const { direction, learnCollection: collection } = this;
     learnModel = learnModel || collection.selectRandomLearnModel();
     const answerResult = await this.showQuestion(learnModel);
     if (typeof answerResult === 'boolean') {
-      runService(`https://poliglot16.ru/audio/verbs/${learnModel.en[0]}.mp3`);
-      setTimeout(() => {
-        runService(`https://poliglot16.ru/audio/verbs/${learnModel.en[1]}.mp3`);
-      }, 1000);
+      if (soundWords[learnModel.en[0]]) {
+        runService(soundWords[learnModel.en[0]]);
+      }
+      if (soundWords[learnModel.en[1]]) {
+        setTimeout(() => {
+          runService(soundWords[learnModel.en[1]]);
+        }, 1000);
+      }
       if (answerResult) {
         collection.upSuccess(learnModel);
         collection.upRepeat(learnModel);
