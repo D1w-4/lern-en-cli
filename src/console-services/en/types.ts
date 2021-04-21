@@ -6,5 +6,6 @@ export type TDirection = {
 
 export interface IChoices<T> {
   name: string,
-  value: T
+  value: T,
+  checked?: boolean
 }

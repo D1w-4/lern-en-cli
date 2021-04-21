@@ -31,7 +31,7 @@ export class ChoicePMService extends AbstractPracticMode {
     const { answer } = await promt({
       type: 'list',
       name: 'answer',
-      message: `${direction} ${directionWord}`,
+      message: `${direction.reversDirection} ${directionWord}`,
       choices: [
         ...choceCollection,
         { name: 'Настройки', value: '~' }

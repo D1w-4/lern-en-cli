@@ -1,7 +1,10 @@
+import * as fs from 'fs';
 import * as inquirer from 'inquirer';
+import * as path from 'path';
 import { DataAdapter } from './adapters/data.adapter';
 import { FirebaseAdapter } from './adapters/firebase.adapter';
 import { JsonFileAdapter } from './adapters/json-file.adapter';
+import { audioService } from './audio.service';
 import { LearnCollection } from './models/learn.collection';
 import { LearnModel } from './models/learn.model';
 import { AbstractPracticMode } from './practic-mode/abstractPracticMode';
@@ -9,17 +12,10 @@ import { ChoicePMService } from './practic-mode/choicePM.service';
 import { InputAndTranslatePMService } from './practic-mode/inputAndTranslatePM.service';
 import { InputPMService } from './practic-mode/inputPM.service';
 import { IChoices, TDirection } from './types';
-import * as fs from 'fs';
-import * as path from 'path';
 
 const soundWords = require('./ultimate.json');
 const promt = inquirer.createPromptModule();
 promt.registerPrompt('filePath', require('inquirer-file-path'));
-const spawn = require('child_process').exec;
-
-function runService(workerData: Array<string>) {
-  spawn(`node ./test.js -- ${workerData.join(' ')}`);
-}
 
 enum Action {
   addLearnModelToCollection = 'add_learn_model_to_collection',
@@ -111,20 +107,28 @@ export class LearnService {
     return tag;
   }
 
+  private async playAudio(learnModel: LearnModel): Promise<void> {
+    for (const word of learnModel.en) {
+      if (soundWords[word]) {
+        const urlsList = [...soundWords[word]];
+        const fn = (songUrl): Promise<void> => {
+          return audioService.play(songUrl).catch(() => {
+            return fn(urlsList.shift());
+          });
+        };
+        await fn(urlsList.shift());
+      }
+    }
+  }
+
   private async loopLearn(learnModel?: LearnModel): Promise<void> {
-    // console.clear();
     const { direction, learnCollection: collection } = this;
     learnModel = learnModel || collection.selectRandomLearnModel();
     const answerResult = await this.showQuestion(learnModel);
+
     if (typeof answerResult === 'boolean') {
-      if (soundWords[learnModel.en[0]]) {
-        runService(soundWords[learnModel.en[0]]);
-      }
-      if (soundWords[learnModel.en[1]]) {
-        setTimeout(() => {
-          runService(soundWords[learnModel.en[1]]);
-        }, 1000);
-      }
+      this.playAudio(learnModel);
+
       if (answerResult) {
         collection.upSuccess(learnModel);
         collection.upRepeat(learnModel);
@@ -153,7 +157,7 @@ export class LearnService {
         }
       }
     } else if (answerResult === Action.addLearnModelToCollection) {
-      const newWordsList = await this.selectNewModels();
+      const newWordsList = await this.selectNewModels(collection.itemsByTag());
       newWordsList.forEach((learnModel) => {
         collection.addLearnModerTag(learnModel, collection.activeTag);
       });
@@ -168,16 +172,18 @@ export class LearnService {
     await this.loopLearn();
   }
 
-  private async selectNewModels(): Promise<Array<LearnModel>> {
+  private async selectNewModels(selectedItems?: Array<LearnModel>): Promise<Array<LearnModel>> {
     const collection = this.learnCollection;
 
     const learnModelList = collection.items.filter((learnModel: LearnModel): boolean => {
-      return !learnModel.break && !learnModel.tags.includes(collection.activeTag);
+      return !learnModel.break;
     });
+
     const choices = learnModelList.map((learnModel, index): IChoices<number> => {
       return {
-        name: `${learnModel.en.join(', ')} - ${learnModel.ru.join(', ')}`,
+        name: `${learnModel.en.join(', ')} - ${learnModel.ru.join(', ')} | ${learnModel.tags.join(', ')}`,
         value: index,
+        checked: selectedItems.some(selectedItem => selectedItem.id === learnModel.id)
       };
     });
     const { nextWordList } = await promt({
@@ -261,13 +267,13 @@ export class LearnService {
       await learnCollection.init();
     }
 
-    const {en} = await promt({
+    const { en } = await promt({
       type: 'input',
       name: 'en',
       message: 'en',
     });
 
-    const {ru} = await promt({
+    const { ru } = await promt({
       type: 'input',
       name: 'ru',
       message: 'ru',
@@ -275,7 +281,7 @@ export class LearnService {
 
     await learnCollection.addModel({
       en: en.split(',').map(s => s.trim()),
-      ru: ru.split(',').map(s => s.trim())
+      ru: ru.split(',').map(s => s.trim()),
     });
     await this.addWord(learnCollection);
   }
