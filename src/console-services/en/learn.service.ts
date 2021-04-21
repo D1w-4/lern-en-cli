@@ -122,6 +122,7 @@ export class LearnService {
   }
 
   private async loopLearn(learnModel?: LearnModel): Promise<void> {
+    console.clear();
     const { direction, learnCollection: collection } = this;
     learnModel = learnModel || collection.selectRandomLearnModel();
     const answerResult = await this.showQuestion(learnModel);
