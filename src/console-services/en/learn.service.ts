@@ -22,7 +22,8 @@ enum Action {
   removeLearnModelCollection = 'remove_learn_model_collection',
   break = 'break',
   goBack = 'go_back',
-  changeConfig = 'change_config'
+  changeConfig = 'change_config',
+  resetCurrentCollection = 'reset_current_collection'
 }
 
 export class LearnService {
@@ -58,6 +59,10 @@ export class LearnService {
         {
           name: 'Изменить конфигурацию',
           value: Action.changeConfig,
+        },
+        {
+          name: 'Сбросить текущую коллекцию',
+          value: Action.resetCurrentCollection
         },
         {
           name: 'Забыть',
@@ -168,6 +173,11 @@ export class LearnService {
       collection.toggleBreakInModel(learnModel, true);
     } else if (answerResult === Action.changeConfig) {
       await this.setConfig();
+    } else if(answerResult === Action.resetCurrentCollection) {
+      const items = collection.itemsByTag();
+      for(const item of items) {
+        await collection.resetModel(item);
+      }
     }
 
     await this.loopLearn();

@@ -98,4 +98,11 @@ export class LearnCollection<TConfig> {
     learnMode.countSuccess++;
     await this.dataAdapter.update(learnMode);
   }
+
+  async resetModel(learnModel: LearnModel): Promise<void> {
+    learnModel.countRepeat = 0;
+    learnModel.countErrors = 0;
+    learnModel.countSuccess = 0;
+    await this.dataAdapter.update(learnModel);
+  }
 }
