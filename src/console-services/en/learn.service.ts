@@ -194,7 +194,7 @@ export class LearnService {
       return {
         name: `${learnModel.en.join(', ')} - ${learnModel.ru.join(', ')} | ${learnModel.tags.join(', ')}`,
         value: index,
-        checked: selectedItems.some(selectedItem => selectedItem.id === learnModel.id)
+        checked: !!selectedItems && selectedItems.some(selectedItem => selectedItem.id === learnModel.id)
       };
     });
     const { nextWordList } = await promt({
