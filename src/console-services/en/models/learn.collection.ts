@@ -56,7 +56,8 @@ export class LearnCollection<TConfig> {
         return a > b ? 1 : -1;
       })
       const maxRepeat = Number(arrRepeat[Math.floor((arrRepeat.length / 100) * 30)]);
-      return this.items.filter(learnModel => learnModel.countRepeat > maxRepeat);
+      console.log(`max repeat mode ${maxRepeat}`);
+      return this.items.filter(learnModel => learnModel.countRepeat <= maxRepeat);
     }
 
     return this.items.filter(learnModel => learnModel.tags.includes(this.activeTag));
