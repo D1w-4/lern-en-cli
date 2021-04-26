@@ -283,6 +283,18 @@ export class LearnService {
       name: 'en',
       message: 'en',
     });
+    const enArr = en.split(',').map(s => s.trim());
+
+    const isEn = enArr.some((word) => {
+      return learnCollection.items.findIndex((learnModel: LearnModel) => {
+        return learnModel.en.includes(word);
+      }) !== -1;
+    })
+
+    if (isEn) {
+      console.error(`"${en}" уже есть в наборе`);
+      return await this.addWord(learnCollection);
+    }
 
     const { ru } = await promt({
       type: 'input',
@@ -290,9 +302,11 @@ export class LearnService {
       message: 'ru',
     });
 
+    const ruArr = ru.split(',').map(s => s.trim());
+
     await learnCollection.addModel({
-      en: en.split(',').map(s => s.trim()),
-      ru: ru.split(',').map(s => s.trim()),
+      en: enArr,
+      ru: ruArr,
     });
     await this.addWord(learnCollection);
   }

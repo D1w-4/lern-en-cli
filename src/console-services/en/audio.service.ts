@@ -18,6 +18,10 @@ class AudioService {
     const transport = RegExp(/^https/).test(fileUrl) ? https : http;
     return new Promise<void>((resolve, reject) => {
       transport.get(fileUrl, (response) => {
+        if (response.headers['content-type'] !== 'audio/mpeg') {
+          reject(new Error('bad content type'));
+          return;
+        }
         const tempFilePath = path.resolve(this.tempPath, fileName);
         const file = fs.createWriteStream(tempFilePath);
 

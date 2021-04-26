@@ -19,6 +19,7 @@ export class LearnCollection<TConfig> {
 
   async addModel(data: any): Promise<void> {
     const learnModel = new LearnModel(data);
+    this.items.push(learnModel);
     await this.dataAdapter.add(learnModel);
   }
 
@@ -65,7 +66,7 @@ export class LearnCollection<TConfig> {
 
     const sliceItems = items.filter((learnModel) => {
       return !errorIds.includes(learnModel.id);
-    }).slice(0, 6 - errorIds.length);
+    });
 
     const fullErrorItems = [...sliceItems, ...errorWords];
     fullErrorItems.sort((): number => {
