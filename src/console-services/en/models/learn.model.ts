@@ -23,7 +23,7 @@ export class LearnModel {
   countSuccess = 0;
   en: Array<string> = [];
   ru: Array<string> = [];
-
+  lastRepeat: string;
   id: string;
   constructor(learnData: any) {
     Object.assign(this, learnData);

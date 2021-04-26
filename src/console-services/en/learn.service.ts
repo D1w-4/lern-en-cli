@@ -5,7 +5,7 @@ import { DataAdapter } from './adapters/data.adapter';
 import { FirebaseAdapter } from './adapters/firebase.adapter';
 import { JsonFileAdapter } from './adapters/json-file.adapter';
 import { audioService } from './audio.service';
-import { LearnCollection } from './models/learn.collection';
+import { ActiveTag, LearnCollection } from './models/learn.collection';
 import { LearnModel } from './models/learn.model';
 import { AbstractPracticMode } from './practic-mode/abstractPracticMode';
 import { ChoicePMService } from './practic-mode/choicePM.service';
@@ -93,14 +93,22 @@ export class LearnService {
       choices: [
         {
           name: 'Новый набор слов',
-          value: 'new',
+          value: ActiveTag.new,
+        },
+        {
+          name: 'Частые ошибки',
+          value: ActiveTag.manyErrors,
+        },
+        {
+          name: 'Мало повторялись',
+          value: ActiveTag.fewRepeat,
         },
         ...tags,
       ],
       message: 'Набор слов',
     });
 
-    if (tag === 'new') {
+    if (tag === ActiveTag.new) {
       const result = await promt({
         type: 'input',
         name: 'tag',
@@ -130,6 +138,10 @@ export class LearnService {
     console.clear();
     const { direction, learnCollection: collection } = this;
     learnModel = learnModel || collection.selectRandomLearnModel();
+    if (!learnModel) {
+      console.error('Слова кончились XD');
+      return
+    }
     const answerResult = await this.showQuestion(learnModel);
 
     if (typeof answerResult === 'boolean') {

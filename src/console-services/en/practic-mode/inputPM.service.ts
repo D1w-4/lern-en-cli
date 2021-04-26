@@ -13,7 +13,8 @@ export class InputPMService extends AbstractPracticMode {
     const { answer } = await promt({
       type: 'input',
       name: 'answer',
-      message: `${direction.direction} ${directionWord}`,
+      message: `S:${learnModel.countSuccess} E:${learnModel.countErrors} R: ${learnModel.countRepeat}
+${direction.direction} ${directionWord}`,
     });
 
     return answer;

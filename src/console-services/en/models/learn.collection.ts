@@ -2,8 +2,13 @@ import { randomInt } from '../../../utils';
 import { DataAdapter } from '../adapters/data.adapter';
 import { LearnModel } from './learn.model';
 
+export enum ActiveTag {
+  new = 'new',
+  manyErrors = 'many_errors',
+  fewRepeat = 'few_repeat'
+}
 export class LearnCollection<TConfig> {
-  activeTag = '';
+  activeTag: string | ActiveTag = '';
   items: Array<LearnModel> = [];
 
   constructor(private dataAdapter: DataAdapter) {
@@ -37,6 +42,23 @@ export class LearnCollection<TConfig> {
   }
 
   itemsByTag(): Array<LearnModel> {
+    if (this.activeTag === ActiveTag.manyErrors) {
+      return this.items.filter(learnModel => learnModel.countRepeat > 0 && learnModel.countErrors - learnModel.countSuccess > 0);
+    }
+
+    if (this.activeTag === ActiveTag.fewRepeat) {
+      const mapRepeat = new Set<number>();
+      this.items.forEach((learnModel) => {
+        mapRepeat.add(learnModel.countRepeat);
+      })
+      const arrRepeat = Array.from(mapRepeat);
+      arrRepeat.sort((a,b) => {
+        return a > b ? 1 : -1;
+      })
+      const maxRepeat = Number(arrRepeat[Math.floor((arrRepeat.length / 100) * 30)]);
+      return this.items.filter(learnModel => learnModel.countRepeat > maxRepeat);
+    }
+
     return this.items.filter(learnModel => learnModel.tags.includes(this.activeTag));
   }
 
@@ -46,7 +68,7 @@ export class LearnCollection<TConfig> {
     await this.dataAdapter.update(learnModel);
   }
 
-  selectRandomLearnModel(): LearnModel {
+  selectRandomLearnModel(): LearnModel | undefined {
     const items = [...this.itemsByTag()];
     items.sort((a: LearnModel, b: LearnModel): number => {
       return a.countRepeat > b.countRepeat ? 1 : -1;
@@ -92,6 +114,7 @@ export class LearnCollection<TConfig> {
 
   async upRepeat(learnMode: LearnModel): Promise<void> {
     learnMode.countRepeat++;
+    learnMode.lastRepeat = new Date().toUTCString();
     await this.dataAdapter.update(learnMode);
   }
 

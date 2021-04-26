@@ -31,7 +31,8 @@ export class ChoicePMService extends AbstractPracticMode {
     const { answer } = await promt({
       type: 'list',
       name: 'answer',
-      message: `${direction.reversDirection} ${directionWord}`,
+      message: `S:${learnModel.countSuccess} E:${learnModel.countErrors} R: ${learnModel.countRepeat}
+${direction.reversDirection} ${directionWord}`,
       choices: [
         ...choceCollection,
         { name: 'Настройки', value: '~' }
