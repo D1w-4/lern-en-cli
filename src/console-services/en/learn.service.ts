@@ -283,11 +283,20 @@ export class LearnService {
 
   async addWord(
     learnCollection?: LearnCollection<LearnModel>,
+    tags?: Array<string>
   ): Promise<void> {
     if (!learnCollection) {
       const adapter = await this.choiceAdapter();
       learnCollection = new LearnCollection(adapter);
       await learnCollection.init();
+    }
+    if (!tags) {
+      const result = await promt({
+        type: 'input',
+        name: 'tag',
+        message: 'Название набора',
+      });
+      tags = result.tag.split(',').map(s => s.trim()).filter(s => s);
     }
 
     const { en } = await promt({
@@ -295,7 +304,7 @@ export class LearnService {
       name: 'en',
       message: 'en',
     });
-    const enArr = en.split(',').map(s => s.trim());
+    const enArr = en.split(',').map(s => s.trim()).filter(s => s);
 
     const isEn = enArr.some((word) => {
       return learnCollection.items.findIndex((learnModel: LearnModel) => {
@@ -314,13 +323,14 @@ export class LearnService {
       message: 'ru',
     });
 
-    const ruArr = ru.split(',').map(s => s.trim());
+    const ruArr = ru.split(',').map(s => s.trim()).filter(s => s);
 
     await learnCollection.addModel({
       en: enArr,
       ru: ruArr,
+      tags
     });
-    await this.addWord(learnCollection);
+    await this.addWord(learnCollection, tags);
   }
 
   async choiceAdapter(): Promise<DataAdapter> {
