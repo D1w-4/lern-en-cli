@@ -10,7 +10,8 @@ export enum ActiveTag {
 export class LearnCollection<TConfig> {
   activeTag: string | ActiveTag = '';
   items: Array<LearnModel> = [];
-
+  repeatedLearModels: Array<string> = [];
+  prevRandomModelId: string = '';
   constructor(private dataAdapter: DataAdapter) {
   }
 
@@ -70,10 +71,15 @@ export class LearnCollection<TConfig> {
   }
 
   selectRandomLearnModel(): LearnModel | undefined {
-    const items = [...this.itemsByTag()];
+    const items = [...this.itemsByTag()]
+      .filter(s => {
+        return s.id !== this.prevRandomModelId && !this.repeatedLearModels.includes(s.id);
+      });
+
     items.sort((a: LearnModel, b: LearnModel): number => {
       return a.countRepeat > b.countRepeat ? 1 : -1;
     });
+
     const errorWords = items.filter(item => {
       if (item.break) {
         return false;
@@ -96,7 +102,13 @@ export class LearnCollection<TConfig> {
       return randomInt(0, 100) > randomInt(0, 100) ? 1 : -1;
     });
 
-    return fullErrorItems[randomInt(0, fullErrorItems.length - 1)];
+    const nextRandomModel = fullErrorItems[randomInt(0, fullErrorItems.length - 1)];
+    this.prevRandomModelId = nextRandomModel.id;
+    return nextRandomModel;
+  }
+
+  addToRepeated(learnModel: LearnModel): void {
+    this.repeatedLearModels.push(learnModel.id);
   }
 
   setActiveTag(tag: string): void {

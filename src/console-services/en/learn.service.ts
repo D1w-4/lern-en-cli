@@ -134,14 +134,17 @@ export class LearnService {
     }
   }
 
-  private async loopLearn(learnModel?: LearnModel): Promise<void> {
+  private async loopLearn(repeatLearnModel?: LearnModel): Promise<void> {
     console.clear();
     const { direction, learnCollection: collection } = this;
-    learnModel = learnModel || collection.selectRandomLearnModel();
+    const learnModel = repeatLearnModel || collection.selectRandomLearnModel();
     if (!learnModel) {
       console.error('Слова кончились XD');
       return
     }
+    console.log(
+      `total:${collection.itemsByTag().length} repeat:${collection.repeatedLearModels.length} lost: ${collection.itemsByTag().length - collection.repeatedLearModels.length}`
+    )
     const answerResult = await this.showQuestion(learnModel);
 
     if (typeof answerResult === 'boolean') {
@@ -150,6 +153,9 @@ export class LearnService {
       if (answerResult) {
         collection.upSuccess(learnModel);
         collection.upRepeat(learnModel);
+        if (!repeatLearnModel) {
+          collection.addToRepeated(learnModel);
+        }
       } else {
         collection.upError(learnModel);
         collection.upRepeat(learnModel);
