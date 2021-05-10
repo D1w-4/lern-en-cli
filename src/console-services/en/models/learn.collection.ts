@@ -76,6 +76,12 @@ export class LearnCollection<TConfig> {
         return s.id !== this.prevRandomModelId && !this.repeatedLearModels.includes(s.id);
       });
 
+    if (items.length === 0 && this.repeatedLearModels.length) {
+      this.repeatedLearModels = [];
+      this.prevRandomModelId = '';
+      return this.selectRandomLearnModel();
+    }
+
     items.sort((a: LearnModel, b: LearnModel): number => {
       return a.countRepeat > b.countRepeat ? 1 : -1;
     });
