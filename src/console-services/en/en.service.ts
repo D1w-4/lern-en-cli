@@ -25,5 +25,22 @@ export class En2Service {
     const learnService = new LearnService();
     await learnService.run();
   }
+
+  @Command({
+    command: 'dump',
+    description: '',
+  })
+  async dump() {
+    const learnService = new LearnService();
+    await learnService.dump();
+  }
+  @Command({
+    command: 'restore <path>',
+    description: '',
+  })
+  async restore(dumpPath: string) {
+    const learnService = new LearnService();
+    await learnService.restoreInDump(dumpPath);
+  }
 }
 

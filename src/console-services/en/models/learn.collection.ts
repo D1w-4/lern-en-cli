@@ -136,6 +136,9 @@ export class LearnCollection<TConfig> {
     await this.dataAdapter.update(learnMode);
   }
 
+  async remove(learnModel: LearnModel): Promise<void> {
+    await this.dataAdapter.remove(learnModel);
+  }
   async resetModel(learnModel: LearnModel): Promise<void> {
     learnModel.countRepeat = 0;
     learnModel.countErrors = 0;

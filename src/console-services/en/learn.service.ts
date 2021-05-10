@@ -12,6 +12,7 @@ import { ChoicePMService } from './practic-mode/choicePM.service';
 import { InputAndTranslatePMService } from './practic-mode/inputAndTranslatePM.service';
 import { InputPMService } from './practic-mode/inputPM.service';
 import { IChoices, TDirection } from './types';
+import moment = require('moment');
 
 const soundWords = require('./ultimate.json');
 const promt = inquirer.createPromptModule();
@@ -285,6 +286,35 @@ export class LearnService {
       return action;
     }
     return this.practicMode.checkAnswer(this.direction, learnModel, answer);
+  }
+
+  async dump(): Promise<void> {
+    const adapter = await this.choiceAdapter();
+    const learnCollection = new LearnCollection(adapter);
+    await learnCollection.init();
+    const strDate = moment().format('DD-MM-YYYY_HH-mm-ss');
+    fs.writeFileSync(
+      `./${strDate}.dump.json`,
+      JSON.stringify(learnCollection.items, null, 4)
+    );
+  }
+
+  async restoreInDump(path: string): Promise<void> {
+    const data = JSON.parse(fs.readFileSync(path, {encoding: 'utf-8'}));
+    const adapter = await this.choiceAdapter();
+    const learnCollection = new LearnCollection(adapter);
+    await learnCollection.init();
+
+    const deletePrList = learnCollection.items.map((learModel: LearnModel) => {
+      return learnCollection.remove(learModel);
+    });
+    await Promise.all(deletePrList);
+
+    const addPrList = data.map((dataModel) => {
+        const model = new LearnModel(dataModel);
+        return learnCollection.addModel(model);
+    });
+    await Promise.all(addPrList);
   }
 
   async addWord(

@@ -40,6 +40,7 @@
     "firebase-admin": "^9.6.0",
     "inquirer": "7.0.5",
     "inquirer-file-path": "^1.0.1",
+    "moment": "^2.29.1",
     "nestjs-console": "^2.1.0",
     "node-lame": "^1.3.1",
     "play-sound": "^1.1.3",
