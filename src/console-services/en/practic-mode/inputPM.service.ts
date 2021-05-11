@@ -23,8 +23,8 @@ ${direction.direction} ${directionWord}`,
   checkAnswer(direction: TDirection, learnModel: LearnModel, answer: string): boolean {
     const answerList = AbstractPracticMode.prepareAnswer(answer);
     const reversDirectionWord = learnModel[direction.reversDirection];
-    return answerList.every(word => {
-      return reversDirectionWord.includes(word);
+    return answerList.every((word,index) => {
+      return reversDirectionWord[index] === word;
     });
   }
 }

@@ -122,7 +122,7 @@ export class LearnService {
   }
 
   private async playAudio(learnModel: LearnModel): Promise<void> {
-    for (const word of learnModel.en) {
+    for (const word of new Set(learnModel.en)) {
       if (soundWords[word]) {
         const urlsList = [...soundWords[word]];
         const fn = (songUrl): Promise<void> => {
